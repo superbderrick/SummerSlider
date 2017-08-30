@@ -20,10 +20,10 @@ class SummerSlider: UISlider {
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		
-		self.makrColor = UIColor.yellow
-		self.markWidth = 1.0
-		self.selectedBarColor = UIColor.black
-		self.unselectedBarColor = UIColor.white
+		self.makrColor = UIColor.white
+		self.markWidth = 2.0
+		self.selectedBarColor = UIColor.red
+		self.unselectedBarColor = UIColor.black
 		self.markPositions = Array<Float>()
 		
 	}
@@ -50,23 +50,24 @@ class SummerSlider: UISlider {
 		context!.setStrokeColor(self.selectedBarColor.cgColor)
 		context!.strokePath()
 		
-		// Selected side
+		// Selected side// from thisone clear.
 		
 		var selectedSide: UIImage!
 		selectedSide = UIGraphicsGetImageFromCurrentImageContext()
 		selectedSide.resizableImage(withCapInsets: UIEdgeInsets.zero)
 		
-		
+		// Selected side// from second clear.
 		context!.setLineCap(CGLineCap.round);
 		context!.setLineWidth(12.0)
 		context!.move(to: CGPoint(x: 6, y: mainFrame.height / 2))
 		context!.addLine(to: CGPoint(x: mainFrame.width - 10, y: mainFrame.height / 2))
 		context!.setStrokeColor(self.unselectedBarColor.cgColor)
 		context!.strokePath()
+		// Selected side// from second clear.
 		
-		var unSelectedSide: UIImage!
-		unSelectedSide = UIGraphicsGetImageFromCurrentImageContext()
-		unSelectedSide.resizableImage(withCapInsets: UIEdgeInsets.zero)
+		
+		let unSelectedSide = UIGraphicsGetImageFromCurrentImageContext()
+		unSelectedSide!.resizableImage(withCapInsets: UIEdgeInsets.zero)
 		
 		selectedSide.draw(at: CGPoint(x:0,y:0))
 		
@@ -85,7 +86,7 @@ class SummerSlider: UISlider {
 		let selectedStripSide = UIGraphicsGetImageFromCurrentImageContext()
 		selectedStripSide!.resizableImage(withCapInsets: UIEdgeInsets.zero)
 		
-		unSelectedSide.draw(at: CGPoint(x:0,y:0))
+		unSelectedSide!.draw(at: CGPoint(x:0,y:0))
 		for mark in self.markPositions {
 			context!.setLineWidth(self.markWidth)
 			let i = CGFloat(mark)

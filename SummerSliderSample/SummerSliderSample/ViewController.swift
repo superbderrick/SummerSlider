@@ -22,9 +22,17 @@ class ViewController: UIViewController {
 		self.summerSlider = SummerSlider(frame:rect)
 		self.summerSlider.makrColor = UIColor.yellow
 		self.summerSlider.selectedBarColor = UIColor.black
-		self.summerSlider.unselectedBarColor = UIColor.white
+		self.summerSlider.unselectedBarColor = UIColor.brown
 		self.summerSlider.markWidth = 1.0
 		testArray.append(10.0)
+		testArray.append(20.0)
+		testArray.append(30.0)
+		testArray.append(40.0)
+		testArray.append(50.0)
+		testArray.append(60.0)
+		testArray.append(70.0)
+		testArray.append(80.0)
+		testArray.append(90.0)
 		self.summerSlider.markPositions = testArray
 		
 		self.view.addSubview(self.summerSlider)
