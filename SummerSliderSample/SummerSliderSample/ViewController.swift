@@ -20,9 +20,11 @@ class ViewController: UIViewController {
 		let rect = CGRect(x: 0, y: 0, width: 435, height: 31)
 		
 		self.summerSlider = SummerSlider(frame:rect)
+		
+		// slider setupValue.
 		self.summerSlider.makrColor = UIColor.yellow
-		self.summerSlider.selectedBarColor = UIColor.black
-		self.summerSlider.unselectedBarColor = UIColor.brown
+		self.summerSlider.unselectedBarColor = UIColor.gray
+		self.summerSlider.selectedBarColor = UIColor.red
 		self.summerSlider.markWidth = 1.0
 		testArray.append(10.0)
 		testArray.append(20.0)

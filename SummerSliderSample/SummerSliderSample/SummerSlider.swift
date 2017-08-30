@@ -22,10 +22,9 @@ class SummerSlider: UISlider {
 		
 		self.makrColor = UIColor.white
 		self.markWidth = 2.0
-		self.selectedBarColor = UIColor.red
+		self.selectedBarColor = UIColor.white
 		self.unselectedBarColor = UIColor.black
 		self.markPositions = Array<Float>()
-		
 	}
 	
 	required init?(coder aDecoder: NSCoder) {
@@ -52,9 +51,9 @@ class SummerSlider: UISlider {
 		
 		// Selected side// from thisone clear.
 		
-		var selectedSide: UIImage!
-		selectedSide = UIGraphicsGetImageFromCurrentImageContext()
-		selectedSide.resizableImage(withCapInsets: UIEdgeInsets.zero)
+		
+		let selectedSide = UIGraphicsGetImageFromCurrentImageContext()
+		selectedSide!.resizableImage(withCapInsets: UIEdgeInsets.zero)
 		
 		// Selected side// from second clear.
 		context!.setLineCap(CGLineCap.round);
@@ -69,18 +68,18 @@ class SummerSlider: UISlider {
 		let unSelectedSide = UIGraphicsGetImageFromCurrentImageContext()
 		unSelectedSide!.resizableImage(withCapInsets: UIEdgeInsets.zero)
 		
-		selectedSide.draw(at: CGPoint(x:0,y:0))
+		selectedSide!.draw(at: CGPoint(x:0,y:0))
 		
 		
-		for mark in self.markPositions {
-			context!.setLineWidth(self.markWidth)
-			let i = CGFloat(mark)
-			let postion:CGFloat! =  CGFloat((mainFrame.width  * i ) / 100.0)
-			context!.move(to: CGPoint(x: postion, y: mainFrame.height / 2 - 5))
-			context!.addLine(to: CGPoint(x: postion, y: mainFrame.height / 2 + 5))
-			context!.setStrokeColor(self.makrColor.cgColor)
-			context!.strokePath()
-		}
+//		for mark in self.markPositions {
+//			context!.setLineWidth(self.markWidth)
+//			let i = CGFloat(mark)
+//			let postion:CGFloat! =  CGFloat((mainFrame.width  * i ) / 100.0)
+//			context!.move(to: CGPoint(x: postion, y: mainFrame.height / 2 - 5))
+//			context!.addLine(to: CGPoint(x: postion, y: mainFrame.height / 2 + 5))
+//			context!.setStrokeColor(self.makrColor.cgColor)
+//			context!.strokePath()
+//		}
 		
 		
 		let selectedStripSide = UIGraphicsGetImageFromCurrentImageContext()
@@ -103,7 +102,7 @@ class SummerSlider: UISlider {
 		
 		UIGraphicsEndImageContext()
 		
-		self.setMaximumTrackImage(selectedStripSide, for: UIControlState.normal)
+		self.setMinimumTrackImage(selectedStripSide, for: UIControlState.normal)
 		self.setMaximumTrackImage(unselectedStripSide, for: UIControlState.normal)
 	}
 
