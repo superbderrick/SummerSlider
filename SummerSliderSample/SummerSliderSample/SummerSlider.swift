@@ -10,17 +10,16 @@ import UIKit
 
 class SummerSlider: UISlider {
 
-	var makrColor : UIColor!
+	var markColor : UIColor!
 	var markWidth : CGFloat!
 	var markPositions : Array<Float>!
-	
 	var selectedBarColor : UIColor!
 	var unselectedBarColor : UIColor!
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		
-		self.makrColor = UIColor.white
+		self.markColor = UIColor.white
 		self.markWidth = 2.0
 		self.selectedBarColor = UIColor.white
 		self.unselectedBarColor = UIColor.black
@@ -32,74 +31,79 @@ class SummerSlider: UISlider {
 		fatalError("init(coder:) has not been implemented")
 	}
 	
-	
+ 
 	override func draw(_ rect: CGRect) {
 		super.draw(rect)
-		let mainFrame = rect.insetBy(dx: 1.0, dy: 10.0)
-		
-		UIGraphicsBeginImageContextWithOptions(mainFrame.size ,false , 0)
+    
+    // Basic Setup to make a Inner Rect.
+		let innerRect = rect.insetBy(dx: Constants.INNER_RECT.X, dy: Constants.INNER_RECT.Y)
+		UIGraphicsBeginImageContextWithOptions(innerRect.size ,false , 0)
 		let context = UIGraphicsGetCurrentContext()!
+    
+    // Draw Selection Rect.
+    SummerSlider.drawRect(context,  innerRect , self.selectedBarColor.cgColor)
 		
-		context.setLineCap(CGLineCap.round);
-		context.setLineWidth(12.0)
-		context.move(to: CGPoint(x: 6, y: mainFrame.height / 2))
-		context.addLine(to: CGPoint(x: mainFrame.width - 10, y: mainFrame.height / 2))
-		context.setStrokeColor(self.selectedBarColor.cgColor)
-		context.strokePath()
-		
-		
-		
+    // Make Selection Image.
 		let selectedSide = UIGraphicsGetImageFromCurrentImageContext()
 		selectedSide!.resizableImage(withCapInsets: UIEdgeInsets.zero)
 		
-		context.setLineCap(CGLineCap.round);
-		context.setLineWidth(12.0)
-		context.move(to: CGPoint(x: 6, y: mainFrame.height / 2))
-		context.addLine(to: CGPoint(x: mainFrame.width - 10, y: mainFrame.height / 2))
-		context.setStrokeColor(self.unselectedBarColor.cgColor)
-		context.strokePath()
+    // Draw UNSelection Rect.
+    SummerSlider.drawRect(context,  innerRect , self.unselectedBarColor.cgColor)
 		
-		
-		
+    // Make UNSelection Image.
 		let unSelectedSide = UIGraphicsGetImageFromCurrentImageContext()
 		unSelectedSide!.resizableImage(withCapInsets: UIEdgeInsets.zero)
 		
+    // Draw Selection Image.
 		selectedSide!.draw(at: CGPoint(x:0,y:0))
 		
+    // Draw Selection Marks.
+		SummerSlider.drawMarks(context, innerRect, self.markColor.cgColor, self.markPositions, self.markWidth)
+
+
+		let selectedStripSide = UIGraphicsGetImageFromCurrentImageContext()!.resizableImage(withCapInsets: UIEdgeInsets.zero)
 		
-		for mark in self.markPositions {
-			context.setLineWidth(self.markWidth)
-			let i = CGFloat(mark)
-			let postion:CGFloat! =  CGFloat((mainFrame.width  * i ) / 100.0)
-			context.move(to: CGPoint(x: postion, y: mainFrame.height / 2 - 5))
-			context.addLine(to: CGPoint(x: postion, y: mainFrame.height / 2 + 5))
-			context.setStrokeColor(self.makrColor.cgColor)
-			context.strokePath()
-		}
-		
-		
-		let selectedStripSide = UIGraphicsGetImageFromCurrentImageContext()
-		selectedStripSide!.resizableImage(withCapInsets: UIEdgeInsets.zero)
-		
+    // Draw UNSelection Image.
 		unSelectedSide!.draw(at: CGPoint(x:0,y:0))
-		for mark in self.markPositions {
-			context.setLineWidth(self.markWidth)
-			let i = CGFloat(mark)
-			let postion:CGFloat! =  CGFloat((mainFrame.width  * i ) / 100.0)
-			context.move(to: CGPoint(x: postion, y: mainFrame.height / 2 - 5))
-			context.addLine(to: CGPoint(x: postion, y: mainFrame.height / 2 + 5))
-			context.setStrokeColor(self.makrColor.cgColor)
-			context.strokePath()
-		}
+    
+
+    SummerSlider.drawMarks(context, innerRect, self.markColor.cgColor, self.markPositions, self.markWidth)
+
 		
-		
-		let unselectedStripSide = UIGraphicsGetImageFromCurrentImageContext()
-		unselectedStripSide!.resizableImage(withCapInsets: UIEdgeInsets.zero)
+		let unselectedStripSide = UIGraphicsGetImageFromCurrentImageContext()!.resizableImage(withCapInsets: UIEdgeInsets.zero)
 		
 		UIGraphicsEndImageContext()
 		
-		self.setMinimumTrackImage(selectedStripSide, for: UIControlState.normal)
-		self.setMaximumTrackImage(unselectedStripSide, for: UIControlState.normal)
+		setupTrackRange(selectedStripSide, unselectedStripSide)
 	}
+  
+  
+  private func setupTrackRange(_ selectedStripSide:UIImage , _ unselectedStripSide:UIImage) {
+    self.setMinimumTrackImage(selectedStripSide, for: UIControlState.normal)
+		self.setMaximumTrackImage(unselectedStripSide, for: UIControlState.normal)
+  }
+  
+  private static func drawMarks(_ context:CGContext ,_ innerRect : CGRect , _ markColor:CGColor ,_ marks:Array<Float>! ,_ markWidth:CGFloat) {
+    
+    for mark in marks {
+      context.setLineWidth(markWidth)
+      let markWidth = CGFloat(mark)
+      let postion:CGFloat! =  CGFloat((innerRect.width  * markWidth ) / 100.0)
+      context.move(to: CGPoint(x: postion, y: innerRect.height / 2 - 5))
+      context.addLine(to: CGPoint(x: postion, y: innerRect.height / 2 + 5))
+      context.setStrokeColor(markColor)
+      context.strokePath()
+    }
+  }
+  
+  private static func drawRect(_ context:CGContext ,_ innerRect : CGRect , _ rectColr:CGColor) {
+    
+    context.setLineCap(CGLineCap.round);
+    context.setLineWidth(12.0)
+    context.move(to: CGPoint(x: 6, y: innerRect.height / 2))
+    context.addLine(to: CGPoint(x: innerRect.width - 10, y: innerRect.height / 2))
+    context.setStrokeColor(rectColr)
+    context.strokePath()
+  }
 
 }

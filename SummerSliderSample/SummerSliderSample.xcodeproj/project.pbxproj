@@ -13,6 +13,7 @@
 		4914CEB81F5678EC00A3F0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4914CEB71F5678EC00A3F0C8 /* Assets.xcassets */; };
 		4914CEBB1F5678EC00A3F0C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4914CEB91F5678EC00A3F0C8 /* LaunchScreen.storyboard */; };
 		4914CEC41F56791400A3F0C8 /* SummerSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4914CEC31F56791400A3F0C8 /* SummerSlider.swift */; };
+		498ED8901F5BFE110032E051 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498ED88F1F5BFE110032E051 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4914CEBA1F5678EC00A3F0C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4914CEBC1F5678EC00A3F0C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4914CEC31F56791400A3F0C8 /* SummerSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SummerSlider.swift; path = SummerSliderSample/SummerSlider.swift; sourceTree = "<group>"; };
+		498ED88F1F5BFE110032E051 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = SummerSliderSample/Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				4914CEC31F56791400A3F0C8 /* SummerSlider.swift */,
+				498ED88F1F5BFE110032E051 /* Constants.swift */,
 			);
 			name = SummerSlider;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				4914CEB31F5678EC00A3F0C8 /* ViewController.swift in Sources */,
 				4914CEC41F56791400A3F0C8 /* SummerSlider.swift in Sources */,
 				4914CEB11F5678EC00A3F0C8 /* AppDelegate.swift in Sources */,
+				498ED8901F5BFE110032E051 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +320,7 @@
 				4914CEC11F5678EC00A3F0C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
