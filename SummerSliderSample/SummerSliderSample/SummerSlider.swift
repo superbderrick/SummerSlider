@@ -19,18 +19,14 @@ class SummerSlider: UISlider {
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		
-		self.markColor = UIColor.white
-		self.markWidth = 2.0
-		self.selectedBarColor = UIColor.white
-		self.unselectedBarColor = UIColor.black
-		self.markPositions = Array<Float>()
+		self.setupDefaultValues()
 	}
 	
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 		fatalError("init(coder:) has not been implemented")
+   // self.setupDefaultValues()
 	}
-	
  
 	override func draw(_ rect: CGRect) {
 		super.draw(rect)
@@ -83,12 +79,21 @@ class SummerSlider: UISlider {
 		self.setMaximumTrackImage(unselectedStripSide, for: UIControlState.normal)
   }
   
+  private func setupDefaultValues(){
+    self.markColor = UIColor.white
+    self.markWidth = 1.0
+    self.selectedBarColor = UIColor.white
+    self.unselectedBarColor = UIColor.black
+    self.markPositions = Array<Float>()
+  }
+  
+  
   private static func drawMarks(_ context:CGContext ,_ innerRect : CGRect , _ markColor:CGColor ,_ marks:Array<Float>! ,_ markWidth:CGFloat) {
     
     for mark in marks {
       context.setLineWidth(markWidth)
       let markWidth = CGFloat(mark)
-      let postion:CGFloat! =  CGFloat((innerRect.width  * markWidth ) / 100.0)
+      let postion:CGFloat! =  CGFloat((innerRect.width  * markWidth ) / Constants.SLIDER.WHOLE_PERCENT)
       context.move(to: CGPoint(x: postion, y: innerRect.height / 2 - 5))
       context.addLine(to: CGPoint(x: postion, y: innerRect.height / 2 + 5))
       context.setStrokeColor(markColor)
@@ -97,7 +102,6 @@ class SummerSlider: UISlider {
   }
   
   private static func drawRect(_ context:CGContext ,_ innerRect : CGRect , _ rectColr:CGColor) {
-    
     context.setLineCap(CGLineCap.round);
     context.setLineWidth(12.0)
     context.move(to: CGPoint(x: 6, y: innerRect.height / 2))

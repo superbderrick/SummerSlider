@@ -13,7 +13,10 @@ struct Constants {
     static let X : CGFloat = 1.0
     static let Y : CGFloat = 10.0
   }
- 
+  
+  struct SLIDER {
+    static let WHOLE_PERCENT : CGFloat = 100.0
+  }
   
 }
 

@@ -15,7 +15,8 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		
-		var testArray = Array<Float>()
+		var markPositionsArray = Array<Float>()
+    markPositionsArray = [10,20,30,40,50,60,70,80,90,100]
 
 		let rect = CGRect(x: 0, y: 0, width: 435, height: 31)
 		
@@ -24,16 +25,7 @@ class ViewController: UIViewController {
 		self.summerSlider.unselectedBarColor = UIColor.gray
 		self.summerSlider.selectedBarColor = UIColor.red
 		self.summerSlider.markWidth = 1.0
-		testArray.append(10.0)
-		testArray.append(20.0)
-		testArray.append(30.0)
-		testArray.append(40.0)
-		testArray.append(50.0)
-		testArray.append(60.0)
-		testArray.append(70.0)
-		testArray.append(80.0)
-		testArray.append(90.0)
-		self.summerSlider.markPositions = testArray
+		self.summerSlider.markPositions = markPositionsArray
 		
 		self.view.addSubview(self.summerSlider)
 		
