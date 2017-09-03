@@ -33,36 +33,32 @@ class SummerSlider: UISlider {
 	}
 	
 	
-	
 	override func draw(_ rect: CGRect) {
 		super.draw(rect)
 		let mainFrame = rect.insetBy(dx: 1.0, dy: 10.0)
 		
 		UIGraphicsBeginImageContextWithOptions(mainFrame.size ,false , 0)
-		let context = UIGraphicsGetCurrentContext()
+		let context = UIGraphicsGetCurrentContext()!
 		
-		// Selected side
-		context!.setLineCap(CGLineCap.round);
-		context!.setLineWidth(12.0)
-		context!.move(to: CGPoint(x: 6, y: mainFrame.height / 2))
-		context!.addLine(to: CGPoint(x: mainFrame.width - 10, y: mainFrame.height / 2))
-		context!.setStrokeColor(self.selectedBarColor.cgColor)
-		context!.strokePath()
+		context.setLineCap(CGLineCap.round);
+		context.setLineWidth(12.0)
+		context.move(to: CGPoint(x: 6, y: mainFrame.height / 2))
+		context.addLine(to: CGPoint(x: mainFrame.width - 10, y: mainFrame.height / 2))
+		context.setStrokeColor(self.selectedBarColor.cgColor)
+		context.strokePath()
 		
-		// Selected side// from thisone clear.
 		
 		
 		let selectedSide = UIGraphicsGetImageFromCurrentImageContext()
 		selectedSide!.resizableImage(withCapInsets: UIEdgeInsets.zero)
 		
-		// Selected side// from second clear.
-		context!.setLineCap(CGLineCap.round);
-		context!.setLineWidth(12.0)
-		context!.move(to: CGPoint(x: 6, y: mainFrame.height / 2))
-		context!.addLine(to: CGPoint(x: mainFrame.width - 10, y: mainFrame.height / 2))
-		context!.setStrokeColor(self.unselectedBarColor.cgColor)
-		context!.strokePath()
-		// Selected side// from second clear.
+		context.setLineCap(CGLineCap.round);
+		context.setLineWidth(12.0)
+		context.move(to: CGPoint(x: 6, y: mainFrame.height / 2))
+		context.addLine(to: CGPoint(x: mainFrame.width - 10, y: mainFrame.height / 2))
+		context.setStrokeColor(self.unselectedBarColor.cgColor)
+		context.strokePath()
+		
 		
 		
 		let unSelectedSide = UIGraphicsGetImageFromCurrentImageContext()
@@ -71,15 +67,15 @@ class SummerSlider: UISlider {
 		selectedSide!.draw(at: CGPoint(x:0,y:0))
 		
 		
-//		for mark in self.markPositions {
-//			context!.setLineWidth(self.markWidth)
-//			let i = CGFloat(mark)
-//			let postion:CGFloat! =  CGFloat((mainFrame.width  * i ) / 100.0)
-//			context!.move(to: CGPoint(x: postion, y: mainFrame.height / 2 - 5))
-//			context!.addLine(to: CGPoint(x: postion, y: mainFrame.height / 2 + 5))
-//			context!.setStrokeColor(self.makrColor.cgColor)
-//			context!.strokePath()
-//		}
+		for mark in self.markPositions {
+			context.setLineWidth(self.markWidth)
+			let i = CGFloat(mark)
+			let postion:CGFloat! =  CGFloat((mainFrame.width  * i ) / 100.0)
+			context.move(to: CGPoint(x: postion, y: mainFrame.height / 2 - 5))
+			context.addLine(to: CGPoint(x: postion, y: mainFrame.height / 2 + 5))
+			context.setStrokeColor(self.makrColor.cgColor)
+			context.strokePath()
+		}
 		
 		
 		let selectedStripSide = UIGraphicsGetImageFromCurrentImageContext()
@@ -87,13 +83,13 @@ class SummerSlider: UISlider {
 		
 		unSelectedSide!.draw(at: CGPoint(x:0,y:0))
 		for mark in self.markPositions {
-			context!.setLineWidth(self.markWidth)
+			context.setLineWidth(self.markWidth)
 			let i = CGFloat(mark)
 			let postion:CGFloat! =  CGFloat((mainFrame.width  * i ) / 100.0)
-			context!.move(to: CGPoint(x: postion, y: mainFrame.height / 2 - 5))
-			context!.addLine(to: CGPoint(x: postion, y: mainFrame.height / 2 + 5))
-			context!.setStrokeColor(self.makrColor.cgColor)
-			context!.strokePath()
+			context.move(to: CGPoint(x: postion, y: mainFrame.height / 2 - 5))
+			context.addLine(to: CGPoint(x: postion, y: mainFrame.height / 2 + 5))
+			context.setStrokeColor(self.makrColor.cgColor)
+			context.strokePath()
 		}
 		
 		
