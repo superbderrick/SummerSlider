@@ -1,11 +1,29 @@
 # SummerSlider
 
-The iOS Custom Slider library that can distinguish the parts where the advertisement of the video player comes out.
-It has  some usecase samples that play contents throw on AVPlayer using ad platforms like VAST (IMA SDK) , FreeWheel.
-The base of Summer Slider is JSlider. Object C version See below.
+[![CI Status](http://img.shields.io/travis/kang.derrick@gmail.com/SummerSlider.svg?style=flat)](https://travis-ci.org/kang.derrick@gmail.com/SummerSlider)
+[![Version](https://img.shields.io/cocoapods/v/SummerSlider.svg?style=flat)](http://cocoapods.org/pods/SummerSlider)
+[![License](https://img.shields.io/cocoapods/l/SummerSlider.svg?style=flat)](http://cocoapods.org/pods/SummerSlider)
+[![Platform](https://img.shields.io/cocoapods/p/SummerSlider.svg?style=flat)](http://cocoapods.org/pods/SummerSlider)
 
+## Example
 
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Requirements
 
+## Installation
 
-[JMMarkSlider ,Object C version ](https://github.com/brightec/JMMarkSlider)
+SummerSlider is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'SummerSlider'
+```
+
+## Author
+
+kang.derrick@gmail.com, kang.derrick@gmail.com
+
+## License
+
+SummerSlider is available under the MIT license. See the LICENSE file for more info.

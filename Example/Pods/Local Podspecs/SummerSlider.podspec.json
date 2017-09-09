@@ -1,0 +1,22 @@
+{
+  "name": "SummerSlider",
+  "version": "0.1.0",
+  "summary": "A short description of SummerSlider.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kang.derrick@gmail.com/SummerSlider",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kang.derrick@gmail.com": "kang.derrick@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/kang.derrick@gmail.com/SummerSlider.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SummerSlider/Classes/**/*"
+}

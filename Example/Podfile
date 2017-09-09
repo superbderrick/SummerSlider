@@ -1,0 +1,6 @@
+use_frameworks!
+target 'SummerSlider_Tests' do
+  pod 'SummerSlider', :path => '../'
+  
+  
+end
