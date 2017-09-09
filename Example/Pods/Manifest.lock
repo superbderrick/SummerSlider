@@ -1,5 +1,5 @@
 PODS:
-  - SummerSlider (0.1.0)
+  - SummerSlider (0.1.1)
 
 DEPENDENCIES:
   - SummerSlider (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SummerSlider: 6df72fdcd8e99673ea251451e463198664f13377
+  SummerSlider: 565c5afa4e70e4c760f7e2a688799ad528663d98
 
 PODFILE CHECKSUM: c59762548c6e31507770351d835f1ab3c894cd75
 
