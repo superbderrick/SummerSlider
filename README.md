@@ -22,7 +22,7 @@ pod 'SummerSlider'
 
 ## Author
 
-kang.derrick@gmail.com, kang.derrick@gmail.com
+SuperbDerrick, kang.derrick@gmail.com
 
 ## License
 

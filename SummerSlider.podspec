@@ -1,10 +1,3 @@
-#
-# Be sure to run `pod lib lint SummerSlider.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = 'SummerSlider'
@@ -18,7 +11,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: The iOS Custom Slider library that can distinguish the parts where the advertisement of the video player comes out.
                        DESC
 
   s.homepage         = 'https://github.com/superbderrick/SummerSlider'
