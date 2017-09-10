@@ -1,6 +1,0 @@
-framework module Pods_vastExample {
-  umbrella header "Pods-vastExample-umbrella.h"
-
-  export *
-  module * { export * }
-}
