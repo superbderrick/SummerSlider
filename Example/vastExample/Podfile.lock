@@ -1,0 +1,15 @@
+PODS:
+  - GoogleAds-IMA-iOS-SDK (3.6.0)
+  - SummerSlider (0.1.2)
+
+DEPENDENCIES:
+  - GoogleAds-IMA-iOS-SDK (~> 3.5)
+  - SummerSlider
+
+SPEC CHECKSUMS:
+  GoogleAds-IMA-iOS-SDK: 193ca918ed33278c29c96683f500524bf788d509
+  SummerSlider: 9ada7a015d4a3445f78c2640a8eb18ce72d4f409
+
+PODFILE CHECKSUM: e0d3da965a02dfa39a89fd62c9c2a20cdaa64dab
+
+COCOAPODS: 1.3.1
