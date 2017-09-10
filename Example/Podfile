@@ -1,11 +1,7 @@
 use_frameworks!
 
 target 'SummerSlider_Example' do
-  pod 'SummerSlider', :path => '../'
+  pod 'SummerSlider'
 
-  target 'SummerSlider_Tests' do
-    inherit! :search_paths
-
-    
-  end
+ 
 end
