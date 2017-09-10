@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27E9A9D703C8009A0F9CE22C /* Pods_SummerSlider_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD7D6BFB13DFB9572C3E1D7 /* Pods_SummerSlider_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		F933813FECB3C74DF6CAEB3B /* Pods_SummerSlider_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F54C5F1AC67D60738A7BD /* Pods_SummerSlider_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		1083FDD50CC4E3EFA5597DB3 /* Pods-SummerSlider_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SummerSlider_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SummerSlider_Example/Pods-SummerSlider_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1CCF2B43B4584A70F2715686 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		58F8E6FEC040497D0FF0AD79 /* Pods-SummerSlider_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SummerSlider_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SummerSlider_Example/Pods-SummerSlider_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SummerSlider_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SummerSlider_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,11 +38,7 @@
 		607FACE51AFB9204008FA782 /* SummerSlider_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SummerSlider_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6848AA39FA147B15DA2FEFB1 /* SummerSlider.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SummerSlider.podspec; path = ../SummerSlider.podspec; sourceTree = "<group>"; };
-		7BD7D6BFB13DFB9572C3E1D7 /* Pods_SummerSlider_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SummerSlider_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F95DFAFDD25C7692A4CEA5 /* Pods-SummerSlider_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SummerSlider_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SummerSlider_Tests/Pods-SummerSlider_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9C3CF8A107869F9F4295D3DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A13F54C5F1AC67D60738A7BD /* Pods_SummerSlider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SummerSlider_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59535BED813EEA02EF1D435 /* Pods-SummerSlider_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SummerSlider_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SummerSlider_Tests/Pods-SummerSlider_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F933813FECB3C74DF6CAEB3B /* Pods_SummerSlider_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +54,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27E9A9D703C8009A0F9CE22C /* Pods_SummerSlider_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +63,6 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for SummerSlider */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -129,16 +119,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				6848AA39FA147B15DA2FEFB1 /* SummerSlider.podspec */,
-				9C3CF8A107869F9F4295D3DE /* README.md */,
-				1CCF2B43B4584A70F2715686 /* LICENSE */,
-			);
-			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
 		7B4193D2B2F03E53DCE34170 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,8 +133,6 @@
 		ACBED11CA942D6D84DC384E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A13F54C5F1AC67D60738A7BD /* Pods_SummerSlider_Example.framework */,
-				7BD7D6BFB13DFB9572C3E1D7 /* Pods_SummerSlider_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
