@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SummerSlider: UISlider {
+public class SummerSlider: UISlider {
 
 	var markColor : UIColor!
 	var markWidth : CGFloat!
