@@ -16,7 +16,7 @@ public class SummerSlider: UISlider {
   var selectedBarColor : UIColor!
   var unselectedBarColor : UIColor!
   
-  override init(frame: CGRect) {
+  public override init(frame: CGRect) {
     super.init(frame: frame)
     
     self.setupDefaultValues()
