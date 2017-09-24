@@ -105,8 +105,27 @@
                     <view key="view" contentMode="scaleToFill" id="4RM-L1-DGw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="CMw-Gn-O1C" customClass="SummerSlider">
+                                <rect key="frame" x="50" y="210" width="450" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YSO-N6-KM3" customClass="SummerSlider">
+                                <rect key="frame" x="50" y="260" width="450" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="m1c-OP-TT4" customClass="SummerSlider">
+                                <rect key="frame" x="50" y="300" width="450" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="testSlider4" destination="CMw-Gn-O1C" id="g9j-vx-v5e"/>
+                        <outlet property="testSlider5" destination="YSO-N6-KM3" id="7Ew-az-6Zz"/>
+                        <outlet property="testSlider6" destination="m1c-OP-TT4" id="PwL-Au-ebB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1P8-y7-ivz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

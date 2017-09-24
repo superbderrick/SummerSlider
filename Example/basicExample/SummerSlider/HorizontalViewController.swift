@@ -14,10 +14,18 @@ class HorizontalViewController: UIViewController {
     var testSlider2:SummerSlider!
     var testSlider3:SummerSlider!
   
-    let testRect1 = CGRect(x:30 ,y:100 , width:300 , height:30)
-    let testRect2 = CGRect(x:30 ,y:150 , width:300 , height:30)
-    let testRect3 = CGRect(x:30 ,y:200 , width:300 , height:30)
+    let testRect1 = CGRect(x:30 ,y:70 , width:300 , height:30)
+    let testRect2 = CGRect(x:30 ,y:120 , width:300 , height:30)
+    let testRect3 = CGRect(x:30 ,y:170 , width:300 , height:30)
+  
+  
+  
+  @IBOutlet weak var testSlider4: SummerSlider!
+  
+  @IBOutlet weak var testSlider5: SummerSlider!
 
+  @IBOutlet weak var testSlider6: SummerSlider!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
       
