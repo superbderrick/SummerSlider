@@ -14,17 +14,17 @@ class HorizontalViewController: UIViewController {
     var testSlider2:SummerSlider!
     var testSlider3:SummerSlider!
   
+    @IBOutlet weak var testSlider4: SummerSlider!
+    @IBOutlet weak var testSlider5: SummerSlider!
+    @IBOutlet weak var testSlider6: SummerSlider!
+  
     let testRect1 = CGRect(x:30 ,y:70 , width:300 , height:30)
     let testRect2 = CGRect(x:30 ,y:120 , width:300 , height:30)
     let testRect3 = CGRect(x:30 ,y:170 , width:300 , height:30)
   
   
   
-  @IBOutlet weak var testSlider4: SummerSlider!
   
-  @IBOutlet weak var testSlider5: SummerSlider!
-
-  @IBOutlet weak var testSlider6: SummerSlider!
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,16 +62,35 @@ class HorizontalViewController: UIViewController {
       self.view.addSubview(testSlider1)
       self.view.addSubview(testSlider2)
       self.view.addSubview(testSlider3)
+      
+      
+      var marksArray4 = Array<Float>()
+      marksArray4 = [0.0,25.0,90.0]
+      testSlider4.selectedBarColor = UIColor.purple
+      testSlider4.unselectedBarColor = UIColor.brown
+      testSlider4.markColor = UIColor.gray
+      testSlider4.markWidth = 3.0
+      testSlider4.markPositions = marksArray4
+      
+      var marksArray5 = Array<Float>()
+      marksArray5 = [10.0,20.0,30.0 , 80,90.0]
+      testSlider5.selectedBarColor = UIColor.cyan
+      testSlider5.unselectedBarColor = UIColor.red
+      testSlider5.markColor = UIColor.green
+      testSlider5.markWidth = 1.0
+      testSlider5.markPositions = marksArray5
+      
+      var marksArray6 = Array<Float>()
+      marksArray6 = [0,12,23,34,45,56,77,99]
+      testSlider6.selectedBarColor = UIColor.white
+      testSlider6.unselectedBarColor = UIColor.black
+      testSlider6.markColor = UIColor.orange
+      testSlider6.markWidth = 6.0
+      testSlider6.markPositions = marksArray6
 
      
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-     
-    }
-    
 
-  
 
 }
