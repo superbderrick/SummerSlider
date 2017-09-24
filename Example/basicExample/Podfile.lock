@@ -1,12 +1,12 @@
 PODS:
-  - SummerSlider (0.1.5)
+  - SummerSlider (0.1.6)
 
 DEPENDENCIES:
-  - SummerSlider (~> 0.1.5)
+  - SummerSlider (~> 0.1.6)
 
 SPEC CHECKSUMS:
-  SummerSlider: 1c32eb86a9ed951ca69733180e435be2f4d958b3
+  SummerSlider: 35f482a623db3d272e9cb10045d6d62816734914
 
-PODFILE CHECKSUM: 0b7655de1b0d93876b597c6c5455f33b237dc494
+PODFILE CHECKSUM: 51b2f9145f2a84d5cbafe419bf0c0a0597d0f89c
 
 COCOAPODS: 1.3.1
