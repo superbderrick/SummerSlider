@@ -24,8 +24,7 @@ public class SummerSlider: UISlider {
   
   required public init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-    fatalError("init(coder:) has not been implemented")
-    // self.setupDefaultValues()
+     self.setupDefaultValues()
   }
   
   override public func draw(_ rect: CGRect) {
