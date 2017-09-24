@@ -10,11 +10,11 @@ import UIKit
 
 public class SummerSlider: UISlider {
   
-  var markColor : UIColor!
-  var markWidth : CGFloat!
-  var markPositions : Array<Float>!
-  var selectedBarColor : UIColor!
-  var unselectedBarColor : UIColor!
+  public var markColor : UIColor!
+  public var markWidth : CGFloat!
+  public var markPositions : Array<Float>!
+  public var selectedBarColor : UIColor!
+  public var unselectedBarColor : UIColor!
   
   public override init(frame: CGRect) {
     super.init(frame: frame)
