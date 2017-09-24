@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import SummerSlider
 
 class ViewController: UIViewController {
+  
+  var testSlider1:SummerSlider!
+  var testSlider2:SummerSlider!
+  var testSlider3:SummerSlider!
+  var testSlider4:SummerSlider!
+  var testSlider5:SummerSlider!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      
+      
+      
     }
 
     override func didReceiveMemoryWarning() {

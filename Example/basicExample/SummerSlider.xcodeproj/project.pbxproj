@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49FB8EAF1F7767F7008FB0A5 /* HorizontalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB8EAE1F7767F7008FB0A5 /* HorizontalViewController.swift */; };
+		49FB8EB11F77680F008FB0A5 /* VerticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB8EB01F77680F008FB0A5 /* VerticalViewController.swift */; };
+		49FB8EB41F776839008FB0A5 /* YoutubeStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB8EB31F776839008FB0A5 /* YoutubeStyleViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		EAB1D180CFB69488351742D1 /* Pods_SummerSlider_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DC33E8CA8B3F8E4CF3EC4D /* Pods_SummerSlider_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1083FDD50CC4E3EFA5597DB3 /* Pods-SummerSlider_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SummerSlider_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SummerSlider_Example/Pods-SummerSlider_Example.release.xcconfig"; sourceTree = "<group>"; };
+		49FB8EAE1F7767F7008FB0A5 /* HorizontalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalViewController.swift; sourceTree = "<group>"; };
+		49FB8EB01F77680F008FB0A5 /* VerticalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalViewController.swift; sourceTree = "<group>"; };
+		49FB8EB31F776839008FB0A5 /* YoutubeStyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeStyleViewController.swift; sourceTree = "<group>"; };
 		58F8E6FEC040497D0FF0AD79 /* Pods-SummerSlider_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SummerSlider_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SummerSlider_Example/Pods-SummerSlider_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SummerSlider_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SummerSlider_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		79DC33E8CA8B3F8E4CF3EC4D /* Pods_SummerSlider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SummerSlider_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +39,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB1D180CFB69488351742D1 /* Pods_SummerSlider_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49FB8EB21F776815008FB0A5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				49FB8EB01F77680F008FB0A5 /* VerticalViewController.swift */,
+				49FB8EAE1F7767F7008FB0A5 /* HorizontalViewController.swift */,
+				49FB8EB31F776839008FB0A5 /* YoutubeStyleViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +77,7 @@
 		607FACD21AFB9204008FA782 /* Example for SummerSlider */ = {
 			isa = PBXGroup;
 			children = (
+				49FB8EB21F776815008FB0A5 /* ViewControllers */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -89,6 +109,7 @@
 		ACBED11CA942D6D84DC384E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79DC33E8CA8B3F8E4CF3EC4D /* Pods_SummerSlider_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -222,7 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49FB8EB41F776839008FB0A5 /* YoutubeStyleViewController.swift in Sources */,
+				49FB8EB11F77680F008FB0A5 /* VerticalViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				49FB8EAF1F7767F7008FB0A5 /* HorizontalViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
