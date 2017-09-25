@@ -13,6 +13,7 @@ public enum DrawingMode {
 	case BothSides
 	case UnselectedOnly
 	case SelectedOnly
+  case WithoutMarks
 }
 
 public enum Orientation {

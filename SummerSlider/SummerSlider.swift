@@ -11,10 +11,12 @@ import UIKit
 @IBDesignable public class SummerSlider: UISlider {
   
   @IBInspectable  public var markColor : UIColor!
-  @IBInspectable  public var markWidth : Float!
   @IBInspectable  public var markPositions : Array<Float>!
   @IBInspectable  public var selectedBarColor : UIColor!
   @IBInspectable  public var unselectedBarColor : UIColor!
+  
+  public var markWidth : Float!
+  public var drawingMode : DrawingMode!
   
   public override init(frame: CGRect) {
     super.init(frame: frame)
@@ -30,10 +32,15 @@ import UIKit
   override public func draw(_ rect: CGRect) {
     super.draw(rect)
     
+    
+    
     // Basic Setup to make a Inner Rect.
     let innerRect = rect.insetBy(dx: Constants.INNER_RECT.X, dy: Constants.INNER_RECT.Y)
     UIGraphicsBeginImageContextWithOptions(innerRect.size ,false , 0)
     let context = UIGraphicsGetCurrentContext()!
+    
+    
+    
     
     // Draw Selection Rect.
     SummerSlider.drawRect(context,  innerRect , self.selectedBarColor.cgColor)
@@ -72,20 +79,21 @@ import UIKit
     setupTrackRange(selectedStripSide, unselectedStripSide)
   }
   
-  
-  private func setupTrackRange(_ selectedStripSide:UIImage , _ unselectedStripSide:UIImage) {
-    self.setMinimumTrackImage(selectedStripSide, for: UIControlState.normal)
-    self.setMaximumTrackImage(unselectedStripSide, for: UIControlState.normal)
-  }
-  
   private func setupDefaultValues(){
     self.markColor = UIColor.white
     self.markWidth = 1.0
     self.selectedBarColor = UIColor.white
     self.unselectedBarColor = UIColor.black
     self.markPositions = Array<Float>()
+    
+    self.drawingMode = DrawingMode.BothSides
   }
   
+  
+  private func setupTrackRange(_ selectedStripSide:UIImage , _ unselectedStripSide:UIImage) {
+    self.setMinimumTrackImage(selectedStripSide, for: UIControlState.normal)
+    self.setMaximumTrackImage(unselectedStripSide, for: UIControlState.normal)
+  }
   
   private static func drawMarks(_ context:CGContext ,_ innerRect : CGRect , _ markColor:CGColor ,_ marks:Array<Float>! ,_ markWidth:Float) {
     
