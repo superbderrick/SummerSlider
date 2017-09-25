@@ -16,6 +16,7 @@
 		4968C9061F77AAD300C48278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4968C9041F77AAD300C48278 /* LaunchScreen.storyboard */; };
 		4968C90B1F77AADE00C48278 /* SummerSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4968C8A21F77A88300C48278 /* SummerSlider.framework */; };
 		4968C90C1F77AADE00C48278 /* SummerSlider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4968C8A21F77A88300C48278 /* SummerSlider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49A7BA9F1F79298500997EC3 /* SummerSliderTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7BA9E1F79298500997EC3 /* SummerSliderTypes.swift */; };
 		49CA0E8E1F78CED9008CA1F2 /* HorizontalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA0E8B1F78CED9008CA1F2 /* HorizontalViewController.swift */; };
 		49CA0E8F1F78CED9008CA1F2 /* VerticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA0E8C1F78CED9008CA1F2 /* VerticalViewController.swift */; };
 		49CA0E901F78CED9008CA1F2 /* YoutubeStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA0E8D1F78CED9008CA1F2 /* YoutubeStyleViewController.swift */; };
@@ -57,6 +58,7 @@
 		4968C9021F77AAD300C48278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4968C9051F77AAD300C48278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4968C9071F77AAD300C48278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49A7BA9E1F79298500997EC3 /* SummerSliderTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummerSliderTypes.swift; sourceTree = "<group>"; };
 		49CA0E8B1F78CED9008CA1F2 /* HorizontalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalViewController.swift; sourceTree = "<group>"; };
 		49CA0E8C1F78CED9008CA1F2 /* VerticalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalViewController.swift; sourceTree = "<group>"; };
 		49CA0E8D1F78CED9008CA1F2 /* YoutubeStyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeStyleViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		4968C8A41F77A88400C48278 /* SummerSlider */ = {
 			isa = PBXGroup;
 			children = (
+				49A7BA9E1F79298500997EC3 /* SummerSliderTypes.swift */,
 				4968C8AD1F77A8DB00C48278 /* Constants.swift */,
 				4968C8AE1F77A8DB00C48278 /* SummerSlider.swift */,
 				4968C8A51F77A88400C48278 /* SummerSlider.h */,
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4968C8AF1F77A8DB00C48278 /* Constants.swift in Sources */,
+				49A7BA9F1F79298500997EC3 /* SummerSliderTypes.swift in Sources */,
 				4968C8B01F77A8DB00C48278 /* SummerSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
