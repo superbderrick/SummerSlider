@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'SummerSliderDemo' do
-  pod 'SummerSlider', '~>0.1.7'
+  pod 'SummerSlider', '~>0.1.8'
 
  
 end
