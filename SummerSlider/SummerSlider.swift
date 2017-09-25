@@ -8,13 +8,13 @@
 
 import UIKit
 
-public class SummerSlider: UISlider {
+@IBDesignable public class SummerSlider: UISlider {
   
-  public var markColor : UIColor!
-  public var markWidth : CGFloat!
-  public var markPositions : Array<Float>!
-  public var selectedBarColor : UIColor!
-  public var unselectedBarColor : UIColor!
+  @IBInspectable  public var markColor : UIColor!
+  @IBInspectable  public var markWidth : Float!
+  @IBInspectable  public var markPositions : Array<Float>!
+  @IBInspectable  public var selectedBarColor : UIColor!
+  @IBInspectable  public var unselectedBarColor : UIColor!
   
   public override init(frame: CGRect) {
     super.init(frame: frame)
@@ -87,10 +87,10 @@ public class SummerSlider: UISlider {
   }
   
   
-  private static func drawMarks(_ context:CGContext ,_ innerRect : CGRect , _ markColor:CGColor ,_ marks:Array<Float>! ,_ markWidth:CGFloat) {
+  private static func drawMarks(_ context:CGContext ,_ innerRect : CGRect , _ markColor:CGColor ,_ marks:Array<Float>! ,_ markWidth:Float) {
     
     for mark in marks {
-      context.setLineWidth(markWidth)
+      context.setLineWidth(CGFloat(markWidth))
       let markWidth = CGFloat(mark)
       let postion:CGFloat! =  CGFloat((innerRect.width  * markWidth ) / Constants.SLIDER.WHOLE_PERCENT)
       context.move(to: CGPoint(x: postion, y: innerRect.height / 2 - 5))
