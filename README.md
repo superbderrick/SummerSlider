@@ -33,7 +33,6 @@ It is possible to display on the slider where the advertisement such as midrole 
 -	Xcode 8
 
 ## How to install.
-------------
 SummerSlider is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -126,6 +125,15 @@ Here you can see a bunch of parameters that you can change:
 - VastSample.
 - Youtube style sample.
 
+# Android
+[SummerSlider for Android](https://github.com/superbderrick/SummerPlayer_Android)
+- After complete iOS Version It is going to start :)
+
+## Object C Version.
+[JMMarkSlider](https://github.com/joamafer/JMMarkSlider)
+
+- Summer slider is based on JMMarkSlider.
+
 
 
 ## Author
@@ -133,7 +141,7 @@ Here you can see a bunch of parameters that you can change:
 SuperbDerrick, kang.derrick@gmail.com
 
 ## References
-#### Please Let me know pull request or  if you want to use this library in your application.
+ Please Let me know pull request or  if you want to use this library in your application.
 
 ## License
 
