@@ -20,6 +20,18 @@ The Summer Slide shows parts  which the advertisement appears in the entire vide
 if you use Google's IMA SDK and AVPLAYER , Summer Slider is useful and suitable.
 It is possible to display on the slider where the advertisement such as midrole and prerole is displayed.
 
+## Demonstration
+<!--![demo1](https://github.com/VeinGuo/VGPlayer/blob/master/Image/demo1.gif)
+
+![demo2](https://github.com/VeinGuo/VGPlayer/blob/master/Image/demo2.gif)
+
+![demo3](http://ojaltanzc.bkt.clouddn.com/vgplayer_embed_in_cell.gif)-->
+
+## Requirements
+-	Swift 3
+-	iOS 8.0+
+-	Xcode 8
+
 ## How to install.
 ------------
 SummerSlider is available through [CocoaPods](http://cocoapods.org). To install
@@ -85,9 +97,43 @@ secondSlider.markPositions = secondArray
 self.view.addSubview(secondSlider)
 ```
 
+
+Setting the marks
+------------
+You can set the marks using a percentage system from 0 to 100. Set all the marks in the `markPositions array` property:
+```
+firstSlider.markPositions = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+```
+
+Customization
+------------
+Here you can see a bunch of parameters that you can change:
+
+#### Marks
+- `markColor` : UIColor  - Customize the color of the marks.
+- `markWidth`: Float - Customize the width of the marks.
+- `markPositions`: [Float] - Set in a percentage system from 0 to 100 where the marks should be placed.
+
+#### Bar colors
+- `selectedBarColor`: UIColor - Customize the color of the selected side of the slider.
+- `unselectedBarColor`: UIColor - Customize the color of the unselected side of the slider.
+
+
+
+## TODO
+- DrawingMode.
+- VerticalSlider.
+- VastSample.
+- Youtube style sample.
+
+
+
 ## Author
 
 SuperbDerrick, kang.derrick@gmail.com
+
+## References
+#### Please Let me know pull request or  if you want to use this library in your application.
 
 ## License
 
