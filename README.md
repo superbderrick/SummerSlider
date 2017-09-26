@@ -48,7 +48,7 @@ Add an UISlider outlet to your view using the User Interface and set `SummerSlid
 
 Link it with the outlet property if you want to access its properties:
 
-@IBOutlet weak var sampleSlider: JMMarkSlider!
+@IBOutlet weak var sampleSlider: SummerSlider!
 
 Simply customize it! (take a look at -Customization- section)
 ```
@@ -62,10 +62,12 @@ sampleSlider.markPositions = sampleArray
 ```
 
 
+Second way (Using code) -  **Preferred** 
+
+
 It is really easy to set it! Firstly, import SummerSlider.
 
 	import SummerSlider
-
 
 ------------
 
