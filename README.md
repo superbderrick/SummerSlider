@@ -30,8 +30,10 @@ pod "SummerSlider"
 
 #### Classic and ancient way
 Copy into your project the following files:
-`SummerSlider.swift` ,
-`Constants.swift`
+`SummerSlider.swift` , `Constants.swift`,
+`HorizontalSlider.swift`,`Slider.swift`,`SliderDrawingProtocol.swift`,`SliderFactory.swift`,
+`SummerSliderTypes.swift`,`VerticalSlider.swift`,
+
 
 
 
