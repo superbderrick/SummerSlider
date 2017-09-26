@@ -71,6 +71,23 @@ It is really easy to set it! Firstly, import SummerSlider.
 
 ------------
 
+```
+var secondSlider: SummerSlider!
+```
+
+Instantiate and customize it (again, take a look at -Customization- section). Finally add it to the desired view as usual:
+```
+  var secondArray = Array<Float>()
+      marksArray1 = [0,10,20,30,40,50,60,70,80,90,100]
+      secondSlider = SummerSlider(frame: testRect1)
+      secondSlider.selectedBarColor = UIColor.blue
+      secondSlider.unselectedBarColor = UIColor.red
+      secondSlider.markColor = UIColor.yellow
+      secondSlider.markWidth = 2.0
+      secondSlider.markPositions = secondArray
+      self.view.addSubview(secondSlider)
+```
+
 ## Author
 
 SuperbDerrick, kang.derrick@gmail.com
