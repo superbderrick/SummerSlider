@@ -16,7 +16,8 @@ Besides I will introuce various usecases to use SummerSlider.
 The Summer Slide shows parts  which the advertisement appears in the entire video duration.
 
 - IMA SDK (VAST) with AVPLYAER.
-if you use Google's IMA SDK and AVPLAYER , Summer Slider is useful and helpful.
+
+if you use Google's IMA SDK and AVPLAYER , Summer Slider is useful and suitable.
 It is possible to display on the slider where the advertisement such as midrole and prerole is displayed.
 
 ## How to install.
@@ -27,6 +28,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "SummerSlider"
 ```
+
 
 #### Classic and ancient way
 Copy into your project the following files:
@@ -39,6 +41,26 @@ Copy into your project the following files:
 
 How to use it? 
 ------------
+#### First way (User Interface):
+
+Add an UISlider outlet to your view using the User Interface and set `SummerSlider` as the custom class. Mostly the exposed properties are marked with **@IBInspectable**, so you can customize them in storyboard's attributes inspector and preview it directly. 
+
+
+Link it with the outlet property if you want to access its properties:
+
+@IBOutlet weak var sampleSlider: JMMarkSlider!
+
+Simply customize it! (take a look at -Customization- section)
+```
+var sampleArray = Array<Float>()
+sampleArray = [0,12,23,34,45,56,77,99]
+sampleSlider.selectedBarColor = UIColor.white
+sampleSlider.unselectedBarColor = UIColor.black
+sampleSlider.markColor = UIColor.orange
+sampleSlider.markWidth = 2.0
+sampleSlider.markPositions = sampleArray
+```
+
 
 It is really easy to set it! Firstly, import SummerSlider.
 
