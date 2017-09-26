@@ -126,7 +126,7 @@ Here you can see a bunch of parameters that you can change:
 - Youtube style sample.
 
 # Android
-[SummerSlider for Android](https://github.com/superbderrick/SummerPlayer_Android)
+[SummerSlider for Android](https://github.com/superbderrick/SummerSliderForAndroid)
 - After complete iOS Version It is going to start :)
 
 ## Object C Version.
