@@ -13,10 +13,10 @@ public enum DrawingMode {
 	case BothSides
 	case UnselectedOnly
 	case SelectedOnly
-  case WithoutMarks
+	case WithoutMarks
 }
 
-public enum Orientation {
+public enum SliderStyle {
 	case Horizontal
 	case Vertical
 }

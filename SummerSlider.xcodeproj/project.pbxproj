@@ -17,6 +17,11 @@
 		4968C90B1F77AADE00C48278 /* SummerSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4968C8A21F77A88300C48278 /* SummerSlider.framework */; };
 		4968C90C1F77AADE00C48278 /* SummerSlider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4968C8A21F77A88300C48278 /* SummerSlider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		49A7BA9F1F79298500997EC3 /* SummerSliderTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7BA9E1F79298500997EC3 /* SummerSliderTypes.swift */; };
+		49A7BAA51F7A55EC00997EC3 /* HorizontalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7BAA01F7A55EC00997EC3 /* HorizontalSlider.swift */; };
+		49A7BAA61F7A55EC00997EC3 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7BAA11F7A55EC00997EC3 /* Slider.swift */; };
+		49A7BAA71F7A55EC00997EC3 /* SliderDrawingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7BAA21F7A55EC00997EC3 /* SliderDrawingProtocol.swift */; };
+		49A7BAA81F7A55EC00997EC3 /* SliderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7BAA31F7A55EC00997EC3 /* SliderFactory.swift */; };
+		49A7BAA91F7A55EC00997EC3 /* VerticlaSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7BAA41F7A55EC00997EC3 /* VerticlaSlider.swift */; };
 		49CA0E8E1F78CED9008CA1F2 /* HorizontalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA0E8B1F78CED9008CA1F2 /* HorizontalViewController.swift */; };
 		49CA0E8F1F78CED9008CA1F2 /* VerticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA0E8C1F78CED9008CA1F2 /* VerticalViewController.swift */; };
 		49CA0E901F78CED9008CA1F2 /* YoutubeStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA0E8D1F78CED9008CA1F2 /* YoutubeStyleViewController.swift */; };
@@ -59,6 +64,11 @@
 		4968C9051F77AAD300C48278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4968C9071F77AAD300C48278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49A7BA9E1F79298500997EC3 /* SummerSliderTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummerSliderTypes.swift; sourceTree = "<group>"; };
+		49A7BAA01F7A55EC00997EC3 /* HorizontalSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalSlider.swift; sourceTree = "<group>"; };
+		49A7BAA11F7A55EC00997EC3 /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		49A7BAA21F7A55EC00997EC3 /* SliderDrawingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderDrawingProtocol.swift; sourceTree = "<group>"; };
+		49A7BAA31F7A55EC00997EC3 /* SliderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderFactory.swift; sourceTree = "<group>"; };
+		49A7BAA41F7A55EC00997EC3 /* VerticlaSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticlaSlider.swift; sourceTree = "<group>"; };
 		49CA0E8B1F78CED9008CA1F2 /* HorizontalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalViewController.swift; sourceTree = "<group>"; };
 		49CA0E8C1F78CED9008CA1F2 /* VerticalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalViewController.swift; sourceTree = "<group>"; };
 		49CA0E8D1F78CED9008CA1F2 /* YoutubeStyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeStyleViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +114,11 @@
 		4968C8A41F77A88400C48278 /* SummerSlider */ = {
 			isa = PBXGroup;
 			children = (
+				49A7BAA01F7A55EC00997EC3 /* HorizontalSlider.swift */,
+				49A7BAA11F7A55EC00997EC3 /* Slider.swift */,
+				49A7BAA21F7A55EC00997EC3 /* SliderDrawingProtocol.swift */,
+				49A7BAA31F7A55EC00997EC3 /* SliderFactory.swift */,
+				49A7BAA41F7A55EC00997EC3 /* VerticlaSlider.swift */,
 				49A7BA9E1F79298500997EC3 /* SummerSliderTypes.swift */,
 				4968C8AD1F77A8DB00C48278 /* Constants.swift */,
 				4968C8AE1F77A8DB00C48278 /* SummerSlider.swift */,
@@ -254,8 +269,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4968C8AF1F77A8DB00C48278 /* Constants.swift in Sources */,
+				49A7BAA81F7A55EC00997EC3 /* SliderFactory.swift in Sources */,
+				49A7BAA71F7A55EC00997EC3 /* SliderDrawingProtocol.swift in Sources */,
 				49A7BA9F1F79298500997EC3 /* SummerSliderTypes.swift in Sources */,
+				49A7BAA91F7A55EC00997EC3 /* VerticlaSlider.swift in Sources */,
+				49A7BAA51F7A55EC00997EC3 /* HorizontalSlider.swift in Sources */,
 				4968C8B01F77A8DB00C48278 /* SummerSlider.swift in Sources */,
+				49A7BAA61F7A55EC00997EC3 /* Slider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
