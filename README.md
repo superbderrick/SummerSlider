@@ -7,12 +7,12 @@
 
 ## SummerSlider.
 
-The SummerSlider is iOS Custom Slider library.(Swift 3.0)
+The SummerSlider is iOS Custom Slider library.
 It is available in a variety of ways (Typically when using a slider and When creating video-related apps).
-
 Besides I will introuce various usecases to use SummerSlider.
 
-- Like a Youtube Player UI  
+## UseCases.
+- Like a Youtube Player UI.  
 The Summer Slide shows parts  which the advertisement appears in the entire video duration.
 
 - IMA SDK (VAST) with AVPLYAER.
@@ -79,8 +79,6 @@ It is really easy to set it! Firstly, import SummerSlider.
 	import SummerSlider
 
 
-
-
 Instantiate and customize it (again, take a look at -Customization- section). Finally add it to the desired view as usual:
 ```
 
@@ -99,9 +97,9 @@ self.view.addSubview(secondSlider)
 
 Setting the marks
 ------------
-You can set the marks using a percentage system from 0 to 100. Set all the marks in the `markPositions array` property:
+You can set the marks using a percentage system from 0 to 100 (Percent). Set all the marks in the `markPositions array` property:
 ```
-firstSlider.markPositions = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+summerSlider.markPositions = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 ```
 
 Customization
@@ -118,12 +116,12 @@ Here you can see a bunch of parameters that you can change:
 - `unselectedBarColor`: UIColor - Customize the color of the unselected side of the slider.
 
 
-
 ## TODO
 - DrawingMode.
 - VerticalSlider.
 - VastSample.
 - Youtube style sample.
+- Improve work for Defend on Oriention change.
 
 # Android
 [SummerSlider for Android](https://github.com/superbderrick/SummerSliderForAndroid)
@@ -133,7 +131,6 @@ Here you can see a bunch of parameters that you can change:
 [JMMarkSlider](https://github.com/joamafer/JMMarkSlider)
 
 - Summer slider is based on JMMarkSlider.
-
 
 
 ## Author
