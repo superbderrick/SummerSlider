@@ -37,8 +37,6 @@ Copy into your project the following files:
 `SummerSliderTypes.swift`,`VerticalSlider.swift`,
 
 
-
-
 How to use it? 
 ------------
 #### First way (User Interface):
@@ -69,7 +67,7 @@ It is really easy to set it! Firstly, import SummerSlider.
 
 	import SummerSlider
 
-------------
+
 
 ```
 var secondSlider: SummerSlider!
