@@ -21,11 +21,9 @@ if you use Google's IMA SDK and AVPLAYER , Summer Slider is useful and suitable.
 It is possible to display on the slider where the advertisement such as midrole and prerole is displayed.
 
 ## Demonstration
-<!--![demo1](https://github.com/VeinGuo/VGPlayer/blob/master/Image/demo1.gif)
+![demo1](https://github.com/superbderrick/SummerSlider/blob/master/Image/demo1.gif)
 
-![demo2](https://github.com/VeinGuo/VGPlayer/blob/master/Image/demo2.gif)
 
-![demo3](http://ojaltanzc.bkt.clouddn.com/vgplayer_embed_in_cell.gif)-->
 
 ## Requirements
 -	Swift 3
