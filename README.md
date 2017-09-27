@@ -122,6 +122,7 @@ Here you can see a bunch of parameters that you can change:
 - VastSample.
 - Youtube style sample.
 - Improve work for Defend on Oriention change.
+- Support Swift 4.0.
 
 # Android
 [SummerSlider for Android](https://github.com/superbderrick/SummerSliderForAndroid)
