@@ -9,15 +9,15 @@
 
 The SummerSlider is iOS Custom Slider library.
 It is available in a variety of ways (Typically when using a slider and When creating video-related apps).
-Besides I will introuce various usecases to use SummerSlider.
+Besides I will introduce various usecases to use SummerSlider.
 
 ## UseCases.
 - Like a Youtube Player UI.  
 The Summer Slide shows parts  which the advertisement appears in the entire video duration.
 
-- IMA SDK (VAST) with AVPLYAER.
+- IMA SDK (VAST) with AVPLAYER.
 
-if you use Google's IMA SDK and AVPLAYER , Summer Slider is useful and suitable.
+if you use Google IMA SDK and AVPLAYER , Summer Slider is useful and suitable.
 It is possible to display on the slider where the advertisement such as midrole and prerole is displayed.
 
 ## Demonstration
