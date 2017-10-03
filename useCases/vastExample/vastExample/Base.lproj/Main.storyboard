@@ -97,12 +97,12 @@
                                         <color key="value" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="unselectedBarColor">
-                                        <color key="value" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6q4-YA-cfJ" firstAttribute="centerY" secondItem="Ppv-f9-jW0" secondAttribute="centerY" id="B9I-s5-Jhk"/>
                             <constraint firstItem="X5c-gb-9eN" firstAttribute="centerX" secondItem="Ppv-f9-jW0" secondAttribute="centerX" id="Vr6-hR-5vL"/>
