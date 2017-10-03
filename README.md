@@ -22,7 +22,7 @@ It is possible to display on the slider where the advertisement such as midrole 
 
 ## Demonstration
 ![demo1](https://github.com/superbderrick/SummerSlider/blob/master/Image/demo1.gif)
-
+![demo2](https://github.com/superbderrick/SummerSlider/blob/master/Image/demo2.gif)
 
 
 ## Requirements
