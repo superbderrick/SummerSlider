@@ -4,7 +4,7 @@ import UIKit
 import SummerSlider
 class PlayerViewController: UIViewController, IMAAdsLoaderDelegate, IMAAdsManagerDelegate {
   
-  static let kTestAppContentUrl = "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8"
+  static let kTestAppContentUrl = "http://rmcdn.2mdn.net/Demo/html5/output.mp4"
   
   static let kTestAppAdTagUrl =
     "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&" +
@@ -109,34 +109,32 @@ class PlayerViewController: UIViewController, IMAAdsLoaderDelegate, IMAAdsManage
     // Initialize the ads manager.
     adsManager.initialize(with: adsRenderingSettings)
     
-    let duration = getDuration()
     
-    var isPreroll = false
-    var adMarks = Array<Float>();
     
+    // Draw Ad postions with SummerSlider appropriately.
+    var adPositions = Array<Float>();
     if self.adsManager != nil {
       if self.adsManager!.adCuePoints.count > 0 {
         for mark in self.adsManager!.adCuePoints {
           let position = mark as! Float
           if position == 0 {
-            isPreroll = true
-            adMarks.append(POSITION.ZERO)
+            adPositions.append(POSITION.ZERO)
           } else if position == -1 {
-            adMarks.append(POSITION.END)
+            adPositions.append(POSITION.END)
           } else {
+            let duration = getDuration()
             let postionTime :Float64 = Float64(position * 100)
             let pointPercent  = postionTime / duration
-            adMarks.append(Float(pointPercent))
+            adPositions.append(Float(pointPercent))
           }
         }
       } else if self.adsManager!.adCuePoints.count == 0 {
-        isPreroll = true
-        adMarks.append(POSITION.ZERO)
+        adPositions.append(POSITION.ZERO)
       }
     }
     
-    summerSlider.markPositions = adMarks
-    
+    summerSlider.markPositions = adPositions
+    summerSlider.reDraw()
   }
   
   func adsLoader(_ loader: IMAAdsLoader!, failedWith adErrorData: IMAAdLoadingErrorData!) {
@@ -199,7 +197,7 @@ class PlayerViewController: UIViewController, IMAAdsLoaderDelegate, IMAAdsManage
   
   func setUpSummerSlider() {
       // Other properties ​​have already been set from storyboard.
-      summerSlider.markWidth = 2.0
+      summerSlider.markWidth = 3.0
   }
   
 }
