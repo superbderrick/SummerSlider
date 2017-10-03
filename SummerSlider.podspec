@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SummerSlider'
-  s.version          = '0.1.9'
+  s.version          = '0.2.0'
   s.summary          = 'Custom UISlider library '
   s.description      = <<-DESC
 TODO: The iOS Custom Slider library that can distinguish the parts where the advertisement of the video player comes out.
