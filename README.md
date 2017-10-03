@@ -21,7 +21,9 @@ if you use Google IMA SDK and AVPLAYER , Summer Slider is useful and suitable.
 It is possible to display on the slider where the advertisement such as midrole and prerole is displayed.
 
 ## Demonstration
+#### Basic.
 ![demo1](https://github.com/superbderrick/SummerSlider/blob/master/Image/demo1.gif)
+#### Usecase(IMA SDK).
 ![demo2](https://github.com/superbderrick/SummerSlider/blob/master/Image/demo2.gif)
 
 
