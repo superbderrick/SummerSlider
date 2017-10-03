@@ -28,6 +28,10 @@ import UIKit
     super.init(coder: aDecoder)
      self.setupDefaultValues()
   }
+
+  public func reDraw() {
+		self.setNeedsDisplay()
+	}
   
   override public func draw(_ rect: CGRect) {
     super.draw(rect)

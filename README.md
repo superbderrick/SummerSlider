@@ -81,14 +81,14 @@ Instantiate and customize it (again, take a look at -Customization- section). Fi
 ```
 
 let testRect1 = CGRect(x:30 ,y:70 , width:300 ,height:30)
-var secondArray = Array<Float>()
+var marksArray1 = Array<Float>()
 marksArray1 = [0,10,20,30,40,50,60,70,80,90,100]
 secondSlider = SummerSlider(frame: testRect1)
 secondSlider.selectedBarColor = UIColor.blue
 secondSlider.unselectedBarColor = UIColor.red
 secondSlider.markColor = UIColor.yellow
 secondSlider.markWidth = 2.0
-secondSlider.markPositions = secondArray
+secondSlider.markPositions = marksArray1
 self.view.addSubview(secondSlider)
 ```
 
