@@ -1,10 +1,22 @@
 import AVFoundation
 import GoogleInteractiveMediaAds
 import UIKit
-
+import SummerSlider
 class PlayerViewController: UIViewController, IMAAdsLoaderDelegate, IMAAdsManagerDelegate {
   
-  static let kTestAppContentUrl_MP4 = "http://rmcdn.2mdn.net/Demo/html5/output.mp4"
+  static let kTestAppContentUrl = "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8"
+  
+  static let kTestAppAdTagUrl =
+    "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&" +
+      "iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&" +
+      "output=vast&unviewed_position_start=1&" +
+      "cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpost&cmsid=496&vid=short_onecue&" +
+		"correlator=";
+  
+    struct POSITION {
+      static let ZERO : Float = 0.0
+      static let END : Float = 100.0
+    }
   
   @IBOutlet weak var videoView: UIView!
   var contentPlayer: AVPlayer?
@@ -14,29 +26,28 @@ class PlayerViewController: UIViewController, IMAAdsLoaderDelegate, IMAAdsManage
   var adsLoader: IMAAdsLoader!
   var adsManager: IMAAdsManager!
   
-  static let kTestAppAdTagUrl =
-    "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&" +
-      "iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&" +
-      "output=vast&unviewed_position_start=1&" +
-  "cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=";
+  @IBOutlet weak var summerSlider: SummerSlider!
   
+
   override func viewDidLoad() {
     super.viewDidLoad()
     
     setUpContentPlayer()
     setUpAdsLoader()
     requestAds()
+    
+    // setup For SummerSlider.
+    
+    setUpSummerSlider()
   }
   
   override func viewDidAppear(_ animated: Bool) {
     playerLayer?.frame = self.videoView.layer.bounds
   }
   
-  
-  
   func setUpContentPlayer() {
     // Load AVPlayer with path to our content.
-    guard let contentURL = URL(string: PlayerViewController.kTestAppContentUrl_MP4) else {
+    guard let contentURL = URL(string: PlayerViewController.kTestAppContentUrl) else {
       print("ERROR: please use a valid URL for the content URL")
       return
     }
@@ -56,6 +67,7 @@ class PlayerViewController: UIViewController, IMAAdsLoaderDelegate, IMAAdsManage
       selector: #selector(PlayerViewController.contentDidFinishPlaying(_:)),
       name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
       object: contentPlayer?.currentItem);
+    
   }
   
   func contentDidFinishPlaying(_ notification: Notification) {
@@ -96,6 +108,35 @@ class PlayerViewController: UIViewController, IMAAdsLoaderDelegate, IMAAdsManage
     
     // Initialize the ads manager.
     adsManager.initialize(with: adsRenderingSettings)
+    
+    let duration = getDuration()
+    
+    var isPreroll = false
+    var adMarks = Array<Float>();
+    
+    if self.adsManager != nil {
+      if self.adsManager!.adCuePoints.count > 0 {
+        for mark in self.adsManager!.adCuePoints {
+          let position = mark as! Float
+          if position == 0 {
+            isPreroll = true
+            adMarks.append(POSITION.ZERO)
+          } else if position == -1 {
+            adMarks.append(POSITION.END)
+          } else {
+            let postionTime :Float64 = Float64(position * 100)
+            let pointPercent  = postionTime / duration
+            adMarks.append(Float(pointPercent))
+          }
+        }
+      } else if self.adsManager!.adCuePoints.count == 0 {
+        isPreroll = true
+        adMarks.append(POSITION.ZERO)
+      }
+    }
+    
+    summerSlider.markPositions = adMarks
+    
   }
   
   func adsLoader(_ loader: IMAAdsLoader!, failedWith adErrorData: IMAAdLoadingErrorData!) {
@@ -128,5 +169,38 @@ class PlayerViewController: UIViewController, IMAAdsLoaderDelegate, IMAAdsManage
     // The SDK is done playing ads (at least for now), so resume the content.
     contentPlayer?.play()
   }
+  
+  // Get the duration value from the player item.
+  func getPlayerItemDuration(_ item: AVPlayerItem) -> CMTime {
+    var itemDuration = kCMTimeInvalid
+    if (item.responds(to: #selector(getter: CAMediaTiming.duration))) {
+      itemDuration = item.duration
+    } else {
+      if (item.asset.responds(to: #selector(getter: CAMediaTiming.duration))) {
+        itemDuration = item.asset.duration
+      }
+    }
+    return itemDuration
+  }
+  
+  func getDuration() -> Float64 {
+    var wholeTime :Float64 = 0
+    if self.contentPlayer != nil {
+      let controller: PlayerViewController = self
+      let duration = controller.getPlayerItemDuration(self.contentPlayer!.currentItem!)
+      
+      wholeTime = CMTimeGetSeconds(duration)
+    }
+    return wholeTime
+  }
+  
+  
+  // MARK: - Regarding of SummerSlider API.
+  
+  func setUpSummerSlider() {
+      // Other properties ​​have already been set from storyboard.
+      summerSlider.markWidth = 2.0
+  }
+  
 }
 

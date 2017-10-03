@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kDk-Gk-YbS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kDk-Gk-YbS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -83,14 +83,35 @@
                                     <constraint firstAttribute="height" constant="240" id="Run-WX-ysn"/>
                                 </constraints>
                             </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="X5c-gb-9eN" customClass="SummerSlider" customModule="SummerSlider">
+                                <rect key="frame" x="35" y="531" width="304" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FrT-tm-oig"/>
+                                    <constraint firstAttribute="width" constant="300" id="fgQ-Lq-SNr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="markColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBarColor">
+                                        <color key="value" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedBarColor">
+                                        <color key="value" red="0.8515139222" green="0.73971623180000001" blue="0.35346180199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6q4-YA-cfJ" firstAttribute="centerY" secondItem="Ppv-f9-jW0" secondAttribute="centerY" id="B9I-s5-Jhk"/>
+                            <constraint firstItem="X5c-gb-9eN" firstAttribute="centerX" secondItem="Ppv-f9-jW0" secondAttribute="centerX" id="Vr6-hR-5vL"/>
                             <constraint firstItem="6q4-YA-cfJ" firstAttribute="centerX" secondItem="Ppv-f9-jW0" secondAttribute="centerX" id="jT2-AK-Xdv"/>
+                            <constraint firstItem="X5c-gb-9eN" firstAttribute="top" secondItem="6q4-YA-cfJ" secondAttribute="bottom" constant="77.5" id="uCc-UK-Dr3"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="summerSlider" destination="X5c-gb-9eN" id="dTE-AW-FTR"/>
                         <outlet property="videoView" destination="6q4-YA-cfJ" id="NGP-bh-p9x"/>
                     </connections>
                 </viewController>
