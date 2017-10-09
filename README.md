@@ -1,5 +1,6 @@
 # SummerSlider
 ![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)
+![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg)
 [![CI Status](http://img.shields.io/travis/superbderrick/SummerSlider.svg?style=flat)](https://travis-ci.org/superbderrick/SummerSlider)
 [![Version](https://img.shields.io/cocoapods/v/SummerSlider.svg?style=flat)](http://cocoapods.org/pods/SummerSlider)
 [![License](https://img.shields.io/cocoapods/l/SummerSlider.svg?style=flat)](http://cocoapods.org/pods/SummerSlider)
@@ -36,10 +37,15 @@ It is possible to display on the slider where the advertisement such as midrole 
 SummerSlider is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+Swift 3.0
 ```ruby
 pod 'SummerSlider', '~>0.2.0'
 ```
 
+Swift 4.0
+```ruby
+pod 'SummerSlider', '~>0.3.0'
+```
 
 #### Classic and ancient way
 Copy into your project the following files:
