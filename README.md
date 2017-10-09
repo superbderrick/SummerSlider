@@ -118,7 +118,7 @@ Here you can see a bunch of parameters that you can change:
 
 ## TODO
 - VerticalSlider.
-
+- DrawingMode.
 
 # Android
 [SummerSlider for Android](https://github.com/superbderrick/SummerSliderForAndroid)
