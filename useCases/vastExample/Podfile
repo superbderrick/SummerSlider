@@ -2,7 +2,7 @@ use_frameworks!
  platform :ios, '9.0'
 
 target 'vastExample' do
-  pod 'SummerSlider', '~>0.2.0'
+  pod 'SummerSlider', '~>0.3.0'
   pod 'GoogleAds-IMA-iOS-SDK', '~> 3.5'
 
 end
