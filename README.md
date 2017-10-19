@@ -7,6 +7,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/SummerSlider.svg?style=flat)](http://cocoapods.org/pods/SummerSlider)
 
 ## SummerSlider.
+![logo](https://github.com/superbderrick/SummerSlider/blob/master/Image/logo.jepg)
 
 The SummerSlider is iOS Custom Slider library.
 It is available in a variety of ways (Typically when using a slider and When creating video-related apps).
