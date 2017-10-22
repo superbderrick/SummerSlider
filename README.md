@@ -7,7 +7,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/SummerSlider.svg?style=flat)](http://cocoapods.org/pods/SummerSlider)
 
 
-## Summer.
+
 ![](https://github.com/superbderrick/SummerSlider/blob/master/Image/logo.jpeg)
 
 ## SummerSlider.
