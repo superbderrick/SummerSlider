@@ -23,8 +23,6 @@
 		49A7BAA81F7A55EC00997EC3 /* SliderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7BAA31F7A55EC00997EC3 /* SliderFactory.swift */; };
 		49A7BAA91F7A55EC00997EC3 /* VerticalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7BAA41F7A55EC00997EC3 /* VerticalSlider.swift */; };
 		49CA0E8E1F78CED9008CA1F2 /* HorizontalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA0E8B1F78CED9008CA1F2 /* HorizontalViewController.swift */; };
-		49CA0E8F1F78CED9008CA1F2 /* VerticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA0E8C1F78CED9008CA1F2 /* VerticalViewController.swift */; };
-		49CA0E901F78CED9008CA1F2 /* YoutubeStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA0E8D1F78CED9008CA1F2 /* YoutubeStyleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +68,6 @@
 		49A7BAA31F7A55EC00997EC3 /* SliderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderFactory.swift; sourceTree = "<group>"; };
 		49A7BAA41F7A55EC00997EC3 /* VerticalSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSlider.swift; sourceTree = "<group>"; };
 		49CA0E8B1F78CED9008CA1F2 /* HorizontalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalViewController.swift; sourceTree = "<group>"; };
-		49CA0E8C1F78CED9008CA1F2 /* VerticalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalViewController.swift; sourceTree = "<group>"; };
-		49CA0E8D1F78CED9008CA1F2 /* YoutubeStyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeStyleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				49CA0E8B1F78CED9008CA1F2 /* HorizontalViewController.swift */,
-				49CA0E8C1F78CED9008CA1F2 /* VerticalViewController.swift */,
-				49CA0E8D1F78CED9008CA1F2 /* YoutubeStyleViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -209,7 +203,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = SuperbDerrick;
 				TargetAttributes = {
 					4968C8A11F77A88300C48278 = {
@@ -226,7 +220,7 @@
 			};
 			buildConfigurationList = 4968C89C1F77A88300C48278 /* Build configuration list for PBXProject "SummerSlider" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -283,10 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49CA0E901F78CED9008CA1F2 /* YoutubeStyleViewController.swift in Sources */,
 				49CA0E8E1F78CED9008CA1F2 /* HorizontalViewController.swift in Sources */,
 				4968C8FC1F77AAD300C48278 /* AppDelegate.swift in Sources */,
-				49CA0E8F1F78CED9008CA1F2 /* VerticalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +326,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -341,6 +334,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -395,6 +389,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -402,6 +397,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
