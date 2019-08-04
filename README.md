@@ -7,25 +7,24 @@
 [![Platform](https://img.shields.io/cocoapods/p/SummerSlider.svg?style=flat)](http://cocoapods.org/pods/SummerSlider)
 
 
-
 ![](https://github.com/superbderrick/SummerSlider/blob/master/Image/logo.jpeg)
 
 ## SummerSlider.
 
 
 
-The SummerSlider is iOS Custom Slider library.
-It is available in a variety of ways (Typically when using a slider and When creating video-related apps).
-Besides I will introduce various usecases to use SummerSlider.
+SummerSlider is an iOS Custom Slider library
+It's available with variety usecases like (typically custome ui slider and video-related apps)
+Besides the repository introduces various usecase samples with SummerSlider
 
-## UseCases.
-- Like a Youtube Player UI.  
-The Summer Slide shows parts  which the advertisement appears in the entire video duration.
+## UseCases
+- Youtube Player UI scenario  
+It shows some parts for advertisement separator sections during entire video duration
 
-- IMA SDK (VAST) with AVPLAYER.
+- IMA SDK (VAST) with AVPLAYER
 
-if you use Google IMA SDK and AVPLAYER , Summer Slider is useful and suitable.
-It is possible to display on the slider where the advertisement such as midrole and prerole is displayed.
+If you used Google IMA SDK with AVPLAYER , the summer slider is a very useful and suitable
+vast sample code was intergrated and explained how to use for some vase usecases such as midrole and prerole cases
 
 ## Demonstration
 #### Basic.
