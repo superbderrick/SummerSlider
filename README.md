@@ -12,7 +12,6 @@
 ## SummerSlider.
 
 
-
 SummerSlider is an iOS Custom Slider library
 It's available with variety usecases like (typically custome ui slider and video-related apps)
 Besides the repository introduces various usecase samples with SummerSlider
@@ -127,13 +126,8 @@ Here you can see a bunch of parameters that you can change:
 - `unselectedBarColor`: UIColor - Customize the color of the unselected side of the slider.
 
 
-## TODO
-- VerticalSlider.
-- DrawingMode.
-
 # Android
-[SummerSlider for Android](https://github.com/superbderrick/SummerSliderForAndroid)
-- After complete iOS Version It is going to start :)
+[SummerSlider for Android](https://github.com/superbderrick/SummerSlider-Android)
 
 ## Object C Version.
 [JMMarkSlider](https://github.com/joamafer/JMMarkSlider)
