@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 @IBDesignable public class GradientSlider: UISlider {
+    
     @IBInspectable  public var markColor : UIColor!
     @IBInspectable  public var markPositions : Array<Float>!
     @IBInspectable  public var selectedBarColor: UIColor!
@@ -94,5 +95,4 @@ import UIKit
         UIGraphicsEndImageContext()
         return image!
     }
-    
 }
