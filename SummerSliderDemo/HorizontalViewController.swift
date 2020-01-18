@@ -10,7 +10,7 @@ import UIKit
 import SummerSlider
 class HorizontalViewController: UIViewController {
   
-  
+
     var testSlider1:SummerSlider!
     var testSlider2:SummerSlider!
     var testSlider3:SummerSlider!

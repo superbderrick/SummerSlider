@@ -7,8 +7,6 @@
 //
 
 import Foundation
-
-
 struct HorizontalSlider: SliderDrawingProtocol , DrawAPIProtocol{
 
 	var slider: Slider
@@ -72,8 +70,8 @@ struct HorizontalSlider: SliderDrawingProtocol , DrawAPIProtocol{
 			context.addLine(to: CGPoint(x: postion, y: innerRect.height / 2 + 5))
 			context.setStrokeColor(markColor)
 			context.strokePath()
-			}
-		
+            
+       }
 	}
 	
 	func drawRect(_ context:CGContext ,_ innerRect : CGRect , _ rectColr:CGColor)->Void {
@@ -99,7 +97,6 @@ struct HorizontalSlider: SliderDrawingProtocol , DrawAPIProtocol{
 		context.setStrokeColor(rectColr)
 		context.strokePath()
 	}
-	
 }
 
 

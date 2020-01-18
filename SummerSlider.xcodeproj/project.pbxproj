@@ -23,6 +23,8 @@
 		49A7BAA81F7A55EC00997EC3 /* SliderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7BAA31F7A55EC00997EC3 /* SliderFactory.swift */; };
 		49A7BAA91F7A55EC00997EC3 /* VerticalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7BAA41F7A55EC00997EC3 /* VerticalSlider.swift */; };
 		49CA0E8E1F78CED9008CA1F2 /* HorizontalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA0E8B1F78CED9008CA1F2 /* HorizontalViewController.swift */; };
+		74C15D5A23D3C30F004398CA /* GradientSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C15D5923D3C30F004398CA /* GradientSlider.swift */; };
+		74C15D5C23D3C58C004398CA /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C15D5B23D3C58C004398CA /* GradientViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		49A7BAA31F7A55EC00997EC3 /* SliderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderFactory.swift; sourceTree = "<group>"; };
 		49A7BAA41F7A55EC00997EC3 /* VerticalSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSlider.swift; sourceTree = "<group>"; };
 		49CA0E8B1F78CED9008CA1F2 /* HorizontalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalViewController.swift; sourceTree = "<group>"; };
+		74C15D5923D3C30F004398CA /* GradientSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientSlider.swift; sourceTree = "<group>"; };
+		74C15D5B23D3C58C004398CA /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 		4968C8A41F77A88400C48278 /* SummerSlider */ = {
 			isa = PBXGroup;
 			children = (
+				74C15D5D23D3C72C004398CA /* GradientSlider */,
 				49A7BAA01F7A55EC00997EC3 /* HorizontalSlider.swift */,
 				49A7BAA11F7A55EC00997EC3 /* Slider.swift */,
 				49A7BAA21F7A55EC00997EC3 /* SliderDrawingProtocol.swift */,
@@ -141,8 +146,17 @@
 			isa = PBXGroup;
 			children = (
 				49CA0E8B1F78CED9008CA1F2 /* HorizontalViewController.swift */,
+				74C15D5B23D3C58C004398CA /* GradientViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		74C15D5D23D3C72C004398CA /* GradientSlider */ = {
+			isa = PBXGroup;
+			children = (
+				74C15D5923D3C30F004398CA /* GradientSlider.swift */,
+			);
+			path = GradientSlider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,11 +223,12 @@
 					4968C8A11F77A88300C48278 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 5MKPJ9K6N6;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 					};
 					4968C8F81F77AAD300C48278 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -263,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4968C8AF1F77A8DB00C48278 /* Constants.swift in Sources */,
+				74C15D5A23D3C30F004398CA /* GradientSlider.swift in Sources */,
 				49A7BAA81F7A55EC00997EC3 /* SliderFactory.swift in Sources */,
 				49A7BAA71F7A55EC00997EC3 /* SliderDrawingProtocol.swift in Sources */,
 				49A7BA9F1F79298500997EC3 /* SummerSliderTypes.swift in Sources */,
@@ -279,6 +295,7 @@
 			files = (
 				49CA0E8E1F78CED9008CA1F2 /* HorizontalViewController.swift in Sources */,
 				4968C8FC1F77AAD300C48278 /* AppDelegate.swift in Sources */,
+				74C15D5C23D3C58C004398CA /* GradientViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +466,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -470,7 +487,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -484,7 +501,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = superbderrick.github.io.SummerSliderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -498,7 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = superbderrick.github.io.SummerSliderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
