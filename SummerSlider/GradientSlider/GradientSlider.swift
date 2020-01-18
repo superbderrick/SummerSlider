@@ -11,20 +11,22 @@ import UIKit
 
 @IBDesignable public class GradientSlider: UISlider {
     
-    @IBInspectable  public var markColor : UIColor!
-    @IBInspectable  public var markPositions : Array<Float>!
-    @IBInspectable  public var selectedBarColor: UIColor!
-    @IBInspectable  public var unselectedBarColor: UIColor!
+    @IBInspectable public var markColor : UIColor!
+    @IBInspectable public var markPositions : Array<Float>!
+    @IBInspectable public var selectedBarColor: UIColor!
+    @IBInspectable public var unselectedBarColor: UIColor!
     
     public var markWidth : Float!
     public var drawingMode: DrawingMode!
     
+    // MARK: Slider height
     @IBInspectable var thickness: CGFloat = 20 {
         didSet {
             setup()
         }
     }
     
+    // MARK: Change slider thumb image
     @IBInspectable var sliderThumbImage: UIImage? {
         didSet {
             setup()
@@ -51,6 +53,7 @@ import UIKit
         
     }
     
+    // MARK: Setup/customize gradient colors here
     func setup() {
         let minTrackStartColor =  UIColor(red: 0.02, green: 0.49, blue: 0.68, alpha: 1)
         let minTrackEndColor =  UIColor(red: 0.52, green: 0.83, blue: 0.94, alpha:1)
@@ -74,6 +77,7 @@ import UIKit
         }
     }
     
+    // MARK: Slider gradient layer
     func gradientImage(size: CGSize, colorSet: [CGColor]) throws -> UIImage? {
         let sliderGradientLayer = CAGradientLayer()
         
