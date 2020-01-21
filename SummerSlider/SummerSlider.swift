@@ -60,8 +60,8 @@ import UIKit
   }
 	
   private func setupTrackRange(_ selectedStripSide:UIImage , _ unselectedStripSide:UIImage) {
-    self.setMinimumTrackImage(selectedStripSide, for: UIControlState.normal)
-    self.setMaximumTrackImage(unselectedStripSide, for: UIControlState.normal)
+    self.setMinimumTrackImage(selectedStripSide, for: UIControl.State.normal)
+    self.setMaximumTrackImage(unselectedStripSide, for: UIControl.State.normal)
   }
 	
 }
