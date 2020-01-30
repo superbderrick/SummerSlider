@@ -8,9 +8,8 @@
 
 import Foundation
 
-
-struct SliderFactory{
-	static func getSlider(slider: Slider)->SliderDrawingProtocol {
+struct SliderFactory {
+	static func getSlider(slider: Slider) -> SliderDrawingProtocol {
 		switch slider.style {
 		case .Horizontal:
 			return HorizontalSlider(slider: slider)

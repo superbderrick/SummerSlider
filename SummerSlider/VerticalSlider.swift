@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct VerticalSlider: SliderDrawingProtocol{
 	var slider: Slider
 	
@@ -16,11 +15,7 @@ struct VerticalSlider: SliderDrawingProtocol{
 		self.slider = slider
 	}
 
-	func getDrawingImage(rect: CGRect) -> (UIImage,UIImage) {
+	func getDrawingImage(rect: CGRect) -> (UIImage, UIImage) {
 		return (UIImage(),UIImage())
 	}
-	
 }
-
-
-

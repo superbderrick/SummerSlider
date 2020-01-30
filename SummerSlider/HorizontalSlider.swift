@@ -7,15 +7,15 @@
 //
 
 import Foundation
-struct HorizontalSlider: SliderDrawingProtocol , DrawAPIProtocol{
 
+struct HorizontalSlider: SliderDrawingProtocol ,DrawAPIProtocol {
 	var slider: Slider
 	
-	init(slider: Slider){
+	init(slider: Slider) {
 		self.slider = slider
 	}
 	
-	func getDrawingImage(rect : CGRect) -> (UIImage,UIImage) {
+	func getDrawingImage(rect : CGRect) -> (UIImage, UIImage) {
 		
 		// Basic Setup to make a Inner Rect.
 		let innerRect = rect.insetBy(dx: Constants.INNER_RECT.X, dy: Constants.INNER_RECT.Y)
@@ -79,25 +79,7 @@ struct HorizontalSlider: SliderDrawingProtocol , DrawAPIProtocol{
 		context.setLineWidth(12.0)
 		context.move(to: CGPoint(x: 6, y: innerRect.height / 2))
 		context.addLine(to: CGPoint(x: innerRect.width - 10, y: innerRect.height / 2))
-    
-    //test
-    let white: UIColor = UIColor.white
-    let skyblue: UIColor = UIColor(red: 102/255, green:204/255, blue: 255/255, alpha:1)
-    let black: UIColor = UIColor.black
-    
-    let colors = [white.cgColor, skyblue.cgColor, black.cgColor]
-    let colorSpace = CGColorSpaceCreateDeviceRGB()
-    let colorLocations: [CGFloat] = [0.0, 0.6, 1.0]
-    
-    let gradient = CGGradient(colorsSpace: colorSpace, colors: colors as CFArray, locations: colorLocations)
-    
-    context.drawLinearGradient(gradient!, start: CGPoint.zero, end: CGPoint.init(x: 0, y: innerRect.height/2), options: [])
-    //test temp code
-    
 		context.setStrokeColor(rectColr)
 		context.strokePath()
 	}
 }
-
-
-

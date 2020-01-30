@@ -17,6 +17,4 @@ struct Constants {
   struct SLIDER {
     static let WHOLE_PERCENT : CGFloat = 100.0
   }
-  
 }
-

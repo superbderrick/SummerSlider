@@ -63,5 +63,4 @@ import UIKit
     self.setMinimumTrackImage(selectedStripSide, for: UIControl.State.normal)
     self.setMaximumTrackImage(unselectedStripSide, for: UIControl.State.normal)
   }
-	
 }

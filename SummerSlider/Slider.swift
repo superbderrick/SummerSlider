@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Slider{
+struct Slider {
 	var iMarkColor : UIColor
 	var iSelectedBarColor : UIColor
 	var iUnSelectedBarColor : UIColor
@@ -17,4 +17,3 @@ struct Slider{
 	var iDrawingMode : DrawingMode
 	var style: SliderStyle
 }
-
