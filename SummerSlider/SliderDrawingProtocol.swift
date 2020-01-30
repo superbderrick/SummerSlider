@@ -9,14 +9,10 @@
 import Foundation
 
 protocol SliderDrawingProtocol {
-	func getDrawingImage(rect : CGRect)->(UIImage,UIImage)
+	func getDrawingImage(rect : CGRect) -> (UIImage, UIImage)
 }
 
 protocol DrawAPIProtocol {
-	func drawMarks(_ context:CGContext ,_ innerRect : CGRect , _ markColor:CGColor ,_ marks:Array<Float>! ,_ markWidth:Float)->Void
+	func drawMarks(_ context:CGContext ,_ innerRect : CGRect , _ markColor:CGColor ,_ marks:Array<Float>! ,_ markWidth:Float) -> Void
 	func drawRect(_ context:CGContext ,_ innerRect : CGRect , _ rectColr:CGColor)->Void
 }
-
-
-
-

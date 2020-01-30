@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct HorizontalSlider: SliderDrawingProtocol ,DrawAPIProtocol {
+struct HorizontalSlider: SliderDrawingProtocol, DrawAPIProtocol {
 	var slider: Slider
 	
 	init(slider: Slider) {

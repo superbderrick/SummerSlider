@@ -49,7 +49,7 @@ import UIKit
     setupTrackRange(Image.0, Image.1)
   }
   
-  private func setupDefaultValues(){
+  private func setupDefaultValues() {
     self.markColor = UIColor.white
     self.markWidth = 1.0
     self.selectedBarColor = UIColor.white
@@ -62,5 +62,6 @@ import UIKit
   private func setupTrackRange(_ selectedStripSide:UIImage , _ unselectedStripSide:UIImage) {
     self.setMinimumTrackImage(selectedStripSide, for: UIControl.State.normal)
     self.setMaximumTrackImage(unselectedStripSide, for: UIControl.State.normal)
+    
   }
 }
