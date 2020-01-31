@@ -23,7 +23,7 @@
 		49A7BAA81F7A55EC00997EC3 /* SliderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7BAA31F7A55EC00997EC3 /* SliderFactory.swift */; };
 		49A7BAA91F7A55EC00997EC3 /* VerticalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7BAA41F7A55EC00997EC3 /* VerticalSlider.swift */; };
 		49CA0E8E1F78CED9008CA1F2 /* HorizontalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA0E8B1F78CED9008CA1F2 /* HorizontalViewController.swift */; };
-		74C15D5A23D3C30F004398CA /* GradientSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C15D5923D3C30F004398CA /* GradientSlider.swift */; };
+		74C15D5A23D3C30F004398CA /* GradientSummerSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C15D5923D3C30F004398CA /* GradientSummerSlider.swift */; };
 		74C15D5C23D3C58C004398CA /* HorizontalGradientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C15D5B23D3C58C004398CA /* HorizontalGradientVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +70,7 @@
 		49A7BAA31F7A55EC00997EC3 /* SliderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderFactory.swift; sourceTree = "<group>"; };
 		49A7BAA41F7A55EC00997EC3 /* VerticalSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSlider.swift; sourceTree = "<group>"; };
 		49CA0E8B1F78CED9008CA1F2 /* HorizontalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalViewController.swift; sourceTree = "<group>"; };
-		74C15D5923D3C30F004398CA /* GradientSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientSlider.swift; sourceTree = "<group>"; };
+		74C15D5923D3C30F004398CA /* GradientSummerSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientSummerSlider.swift; sourceTree = "<group>"; };
 		74C15D5B23D3C58C004398CA /* HorizontalGradientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalGradientVC.swift; sourceTree = "<group>"; };
 		74FCAF7E23E490AA006F52CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -156,7 +156,7 @@
 		74C15D5D23D3C72C004398CA /* GradientSummerSlider */ = {
 			isa = PBXGroup;
 			children = (
-				74C15D5923D3C30F004398CA /* GradientSlider.swift */,
+				74C15D5923D3C30F004398CA /* GradientSummerSlider.swift */,
 			);
 			path = GradientSummerSlider;
 			sourceTree = "<group>";
@@ -288,7 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4968C8AF1F77A8DB00C48278 /* Constants.swift in Sources */,
-				74C15D5A23D3C30F004398CA /* GradientSlider.swift in Sources */,
+				74C15D5A23D3C30F004398CA /* GradientSummerSlider.swift in Sources */,
 				49A7BAA81F7A55EC00997EC3 /* SliderFactory.swift in Sources */,
 				49A7BAA71F7A55EC00997EC3 /* SliderDrawingProtocol.swift in Sources */,
 				49A7BA9F1F79298500997EC3 /* SummerSliderTypes.swift in Sources */,
