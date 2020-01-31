@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct VerticalSlider: SliderDrawingProtocol{
+struct VerticalSlider: SliderDrawingProtocol {
 	var slider: Slider
 	
 	init(slider: Slider){

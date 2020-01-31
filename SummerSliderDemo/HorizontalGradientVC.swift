@@ -12,7 +12,7 @@ import SummerSlider
 class HorizontalGradientVC: UIViewController {
     
     @IBOutlet weak var gradientSummerSlider: GradientSummerSlider! // default
-    @IBOutlet weak var gradientSummerSliderWithBackgroundColor: GradientSummerSlider! // w/ backgroundColor set in Interface Builder
+    @IBOutlet weak var gradientSummerSliderWithBackgroundColor: GradientSummerSlider! // w/ unselectedBar UIColor set in Interface Builder
     
     override func viewDidLoad() {
         super.viewDidLoad()
