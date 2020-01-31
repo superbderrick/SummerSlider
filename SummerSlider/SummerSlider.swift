@@ -38,9 +38,9 @@ import UIKit
 	
 	var sliders = [Slider]()
 	
-	sliders.append(Slider(iMarkColor: self.markColor , iSelectedBarColor: self.selectedBarColor , iUnSelectedBarColor: self.unselectedBarColor , iMarkWidth: self.markWidth , iMarkPositions: self.markPositions ,  iDrawingMode: self.drawingMode , style: SliderStyle.Horizontal))
+	sliders.append(Slider(iMarkColor: self.markColor, iSelectedBarColor: self.selectedBarColor, iUnSelectedBarColor: self.unselectedBarColor, iMarkWidth: self.markWidth, iMarkPositions: self.markPositions,  iDrawingMode: self.drawingMode, style: SliderStyle.Horizontal))
 	
-	sliders.append(Slider(iMarkColor: self.markColor , iSelectedBarColor: self.selectedBarColor , iUnSelectedBarColor: self.unselectedBarColor , iMarkWidth: self.markWidth , iMarkPositions: self.markPositions ,  iDrawingMode: self.drawingMode , style: SliderStyle.Vertical))
+	sliders.append(Slider(iMarkColor: self.markColor, iSelectedBarColor: self.selectedBarColor, iUnSelectedBarColor: self.unselectedBarColor, iMarkWidth: self.markWidth, iMarkPositions: self.markPositions,  iDrawingMode: self.drawingMode, style: SliderStyle.Vertical))
 	
 	let horizontalSlider = SliderFactory.getSlider(slider: sliders[0])
 	

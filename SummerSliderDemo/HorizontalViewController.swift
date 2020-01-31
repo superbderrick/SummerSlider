@@ -8,8 +8,8 @@
 
 import UIKit
 import SummerSlider
+
 class HorizontalViewController: UIViewController {
-  
 
     var testSlider1:SummerSlider!
     var testSlider2:SummerSlider!
@@ -23,7 +23,6 @@ class HorizontalViewController: UIViewController {
     @IBOutlet weak var testSlider5: SummerSlider!
     @IBOutlet weak var testSlider6: SummerSlider!
   
-  
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -36,7 +35,6 @@ class HorizontalViewController: UIViewController {
       testSlider1.markWidth = 2.0
       testSlider1.markPositions = marksArray1
       
-
       var marksArray2 = Array<Float>()
       marksArray2 = [10.0,15.0,23.0,67.0,71.0]
       testSlider2 = SummerSlider(frame: testRect2)
@@ -57,11 +55,9 @@ class HorizontalViewController: UIViewController {
       testSlider3.markWidth = 10.0
       testSlider3.markPositions = marksArray3
       
-      
       self.view.addSubview(testSlider1)
       self.view.addSubview(testSlider2)
       self.view.addSubview(testSlider3)
-      
       
       var marksArray4 = Array<Float>()
       marksArray4 = [0.0,25.0,90.0]
@@ -78,10 +74,6 @@ class HorizontalViewController: UIViewController {
       testSlider6.markColor = UIColor.orange
       testSlider6.markWidth = 6.0
       testSlider6.markPositions = marksArray6
-
      
     }
-
-
-
 }

@@ -13,6 +13,6 @@ protocol SliderDrawingProtocol {
 }
 
 protocol DrawAPIProtocol {
-	func drawMarks(_ context:CGContext ,_ innerRect : CGRect , _ markColor:CGColor ,_ marks:Array<Float>! ,_ markWidth:Float) -> Void
-	func drawRect(_ context:CGContext ,_ innerRect : CGRect , _ rectColr:CGColor)->Void
+	func drawMarks(_ context: CGContext ,_ innerRect: CGRect , _ markColor: CGColor ,_ marks: Array<Float>! ,_ markWidth: Float) -> Void
+	func drawRect(_ context: CGContext ,_ innerRect: CGRect , _ rectColr: CGColor)->Void
 }

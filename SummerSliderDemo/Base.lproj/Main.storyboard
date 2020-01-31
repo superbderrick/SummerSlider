@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="1454.1229385307347" y="-524"/>
         </scene>
-        <!--Gradient View Controller-->
+        <!--Horizontal GradientVC-->
         <scene sceneID="7sx-Js-STc">
             <objects>
-                <viewController id="F3T-jS-TMp" customClass="GradientViewController" customModule="SummerSliderDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="F3T-jS-TMp" customClass="HorizontalGradientVC" customModule="SummerSliderDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aty-8u-31T"/>
                         <viewControllerLayoutGuide type="bottom" id="jRP-nC-63C"/>
@@ -89,16 +89,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="p0J-eV-0EC" customClass="GradientSlider" customModule="SummerSlider">
-                                <rect key="frame" x="10" y="98" width="639" height="30"/>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="p0J-eV-0EC" customClass="GradientSummerSlider" customModule="SummerSlider">
+                                <rect key="frame" x="13" y="98" width="639" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="thumbTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
                                         <real key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="sliderBackgroundColor">
-                                        <color key="value" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttributes>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="F6I-HY-hpj" customClass="GradientSummerSlider" customModule="SummerSlider">
+                                <rect key="frame" x="14" y="156" width="639" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedBarColor">
+                                        <color key="value" red="0.21142186697860643" green="0.75388755302700394" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbColor">
+                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
@@ -108,11 +119,12 @@
                     <navigationItem key="navigationItem" id="n6N-IY-AL9"/>
                     <connections>
                         <outlet property="gradientSummerSlider" destination="p0J-eV-0EC" id="gUv-0b-G85"/>
+                        <outlet property="gradientSummerSliderWithBackgroundColor" destination="F6I-HY-hpj" id="Tly-Qu-RhD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHc-z4-x1a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2111.6941529235382" y="-541.60000000000002"/>
+            <point key="canvasLocation" x="2280" y="-484"/>
         </scene>
         <!--Horizontal View Controller-->
         <scene sceneID="Oup-JY-8RG">

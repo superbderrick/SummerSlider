@@ -23,14 +23,14 @@ struct HorizontalSlider: SliderDrawingProtocol, DrawAPIProtocol {
 		let context = UIGraphicsGetCurrentContext()!
 		
 		// Draw Selection Rect.
-		drawRect(context,  innerRect , slider.iSelectedBarColor.cgColor)
+		drawRect(context, innerRect, slider.iSelectedBarColor.cgColor)
 		
 		// Make Selection Image.
 		let selectedSide = UIGraphicsGetImageFromCurrentImageContext()
 		selectedSide!.resizableImage(withCapInsets: UIEdgeInsets.zero)
 		
 		// Draw UNSelection Rect.
-		drawRect(context,  innerRect , slider.iUnSelectedBarColor.cgColor)
+		drawRect(context,  innerRect, slider.iUnSelectedBarColor.cgColor)
 		
 		// Make UNSelection Image.
 		let unSelectedSide = UIGraphicsGetImageFromCurrentImageContext()
@@ -39,19 +39,15 @@ struct HorizontalSlider: SliderDrawingProtocol, DrawAPIProtocol {
 		// Draw Selection Image.
 		selectedSide!.draw(at: CGPoint(x:0,y:0))
 		
-		
 		// Draw Selection Marks. slider.iMarkColor.cgColor, slider.iMarkPositions, slider.iMarkWidth
-		drawMarks(context, innerRect, slider.iMarkColor.cgColor , slider.iMarkPositions , slider.iMarkWidth )
-		
+		drawMarks(context, innerRect, slider.iMarkColor.cgColor, slider.iMarkPositions, slider.iMarkWidth)
 		
 		let selectedStripSide = UIGraphicsGetImageFromCurrentImageContext()!.resizableImage(withCapInsets: UIEdgeInsets.zero)
 		
 		// Draw UNSelection Image.
 		unSelectedSide!.draw(at: CGPoint(x:0,y:0))
 		
-		
 		drawMarks(context, innerRect, slider.iMarkColor.cgColor, slider.iMarkPositions, slider.iMarkWidth)
-		
 		
 		let unselectedStripSide = UIGraphicsGetImageFromCurrentImageContext()!.resizableImage(withCapInsets: UIEdgeInsets.zero)
 		
