@@ -13,7 +13,7 @@ import UIKit
 @IBDesignable public class GradientSummerSlider: UISlider {
     
     /// customizable from Interface Builder; first color from gradient range
-    @IBInspectable var firstColor: UIColor? { // customizable from Interface Builder; first color from gradient range
+    @IBInspectable var firstColor: UIColor? {
         didSet {
             setup()
         }
@@ -79,13 +79,12 @@ import UIKit
         do {
             self.setMinimumTrackImage(try self.gradientImage(
                 size: self.trackRect(forBounds: self.bounds).size,
-                gradientRangeColors: [(firstColor?.cgColor ?? UIColor.red.cgColor), secondColor?.cgColor ?? UIColor.blue.cgColor]),
-                                      for: .normal)
+                gradientRangeColors: [(firstColor?.cgColor ?? UIColor.red.cgColor), secondColor?.cgColor ?? UIColor.blue.cgColor]), for: .normal)
             
             self.setMaximumTrackImage(try self.gradientImage(
                 size: self.trackRect(forBounds: self.bounds).size,
-                gradientRangeColors: [(firstColor?.cgColor ?? UIColor.red.cgColor), (secondColor?.cgColor ?? UIColor.blue.cgColor)]),
-                                      for: .normal)
+                gradientRangeColors: [(firstColor?.cgColor ?? UIColor.red.cgColor), (secondColor?.cgColor ?? UIColor.blue.cgColor)]), for: .normal)
+            
             self.maximumTrackTintColor = unselectedBarColor /// defaults to UIColor.lightGray, customizable from Interface Builder
             self.setThumbImage(thumbImage, for: .normal)
             self.thumbTintColor = thumbColor
