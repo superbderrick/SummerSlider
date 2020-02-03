@@ -12,6 +12,18 @@ import UIKit
 
 @IBDesignable public class GradientSummerSlider: UISlider {
     
+    /// customizable from Interface Builder; first color from gradient range
+    @IBInspectable var firstColor: UIColor? { // customizable from Interface Builder; first color from gradient range
+        didSet {
+            setup()
+        }
+    }
+    /// customizable from Interface Builder; first color from gradient range
+    @IBInspectable var secondColor: UIColor? {
+        didSet {
+            setup()
+        }
+    }
     /// default sliderHeight is set to 20.0, however, it is customizable via Interface Builder
     @IBInspectable var sliderHeight: CGFloat = 20.0 {
             didSet {
@@ -61,20 +73,20 @@ import UIKit
         }
     
        public func setup() {
-          let minTrackStartColor =  UIColor(red: 0.02, green: 0.49, blue: 0.68, alpha: 1)
-          let minTrackEndColor =  UIColor(red: 0.52, green: 0.20, blue: 0.94, alpha:1)
+          let minTrackStartColor = firstColor
+          let minTrackEndColor = secondColor
      
         do {
             self.setMinimumTrackImage(try self.gradientImage(
                 size: self.trackRect(forBounds: self.bounds).size,
-                colorSet: [minTrackStartColor.cgColor, minTrackEndColor.cgColor]),
+                gradientRangeColors: [(firstColor?.cgColor ?? UIColor.red.cgColor), secondColor?.cgColor ?? UIColor.blue.cgColor]),
                                       for: .normal)
             
             self.setMaximumTrackImage(try self.gradientImage(
                 size: self.trackRect(forBounds: self.bounds).size,
-                colorSet: [(minTrackEndColor.cgColor), (minTrackEndColor.cgColor)]),
+                gradientRangeColors: [(firstColor?.cgColor ?? UIColor.red.cgColor), (secondColor?.cgColor ?? UIColor.blue.cgColor)]),
                                       for: .normal)
-            self.maximumTrackTintColor = unselectedBarColor // defaults to UIColor.lightGray, customizable from Interface Builder
+            self.maximumTrackTintColor = unselectedBarColor /// defaults to UIColor.lightGray, customizable from Interface Builder
             self.setThumbImage(thumbImage, for: .normal)
             self.thumbTintColor = thumbColor
         
@@ -85,12 +97,12 @@ import UIKit
             }
         }
         
-      public func gradientImage(size: CGSize, colorSet: [CGColor]) throws -> UIImage? {
+      public func gradientImage(size: CGSize, gradientRangeColors: [CGColor]) throws -> UIImage? {
             let sliderGradientLayer = CAGradientLayer()
             sliderGradientLayer.frame = CGRect.init(x:0, y:0, width:size.width, height: size.height)
             sliderGradientLayer.cornerRadius = sliderGradientLayer.frame.height / 2
             sliderGradientLayer.masksToBounds = true
-            sliderGradientLayer.colors = colorSet
+            sliderGradientLayer.colors = gradientRangeColors
             sliderGradientLayer.startPoint = CGPoint.init(x:0.0, y:0.5)
             sliderGradientLayer.endPoint = CGPoint.init(x:1.0, y:0.5)
       
