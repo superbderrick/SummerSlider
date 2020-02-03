@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public enum DrawingMode {
 	case BothSides
 	case UnselectedOnly

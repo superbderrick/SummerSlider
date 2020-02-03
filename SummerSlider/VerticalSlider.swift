@@ -8,19 +8,14 @@
 
 import Foundation
 
-
-struct VerticalSlider: SliderDrawingProtocol{
+struct VerticalSlider: SliderDrawingProtocol {
 	var slider: Slider
 	
 	init(slider: Slider){
 		self.slider = slider
 	}
 
-	func getDrawingImage(rect: CGRect) -> (UIImage,UIImage) {
+	func getDrawingImage(rect: CGRect) -> (UIImage, UIImage) {
 		return (UIImage(),UIImage())
 	}
-	
 }
-
-
-
