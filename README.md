@@ -7,7 +7,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SummerSlider.svg?style=flat)](http://cocoapods.org/pods/SummerSlider)
 [![License](https://img.shields.io/cocoapods/l/SummerSlider.svg?style=flat)](http://cocoapods.org/pods/SummerSlider)
 [![Platform](https://img.shields.io/cocoapods/p/SummerSlider.svg?style=flat)](http://cocoapods.org/pods/SummerSlider)
-
+[![HitCount](http://hits.dwyl.com/superbderrick/https://githubcom/superbderrick/SummerSlider.svg)](http://hits.dwyl.com/superbderrick/https://githubcom/superbderrick/SummerSlider)
 
 ![](https://github.com/superbderrick/SummerSlider/blob/master/Image/logo.jpeg)
 
