@@ -35,7 +35,7 @@ vast sample code was intergrated and explained how to use for some vase usecases
 
 
 ## Requirements
--	Swift 3
+-	Swift 3,4.0,5.0
 -	iOS 8.0+
 -	Xcode 8
 
@@ -132,10 +132,6 @@ Here you can see a bunch of parameters that you can change:
 #### Bar colors
 - `selectedBarColor`: UIColor - Customize the color of the selected side of the slider.
 - `unselectedBarColor`: UIColor - Customize the color of the unselected side of the slider.
-
-
-# Android
-[SummerSlider for Android](https://github.com/superbderrick/SummerSlider-Android)
 
 ## Object C Version.
 [JMMarkSlider](https://github.com/joamafer/JMMarkSlider)
