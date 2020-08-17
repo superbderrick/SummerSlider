@@ -53,6 +53,12 @@ Swift 4.0
 pod 'SummerSlider', '~>0.3.0'
 ```
 
+Swift 5.0
+```ruby
+pod 'SummerSlider', '~>0.4.0'
+```
+
+
 #### Classic and ancient way
 Copy into your project the following files:
 `SummerSlider.swift` , `Constants.swift`,
