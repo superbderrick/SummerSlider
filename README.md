@@ -27,7 +27,7 @@ It shows some parts for advertisement separator sections during entire video dur
 If you used Google IMA SDK with AVPLAYER , the summer slider is a very useful and suitable
 vast sample code was intergrated and explained how to use for some vase usecases such as midrole and prerole cases
 
-## Demonstration
+## Demon
 #### Basic.
 ![demo1](https://github.com/superbderrick/SummerSlider/blob/master/Image/demo1.gif)
 #### Usecase(IMA SDK).
