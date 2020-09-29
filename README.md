@@ -11,7 +11,7 @@
 
 ![](https://github.com/superbderrick/SummerSlider/blob/master/Image/logo.jpeg)
 
-## SummerSlider.
+## SummerSlider
 
 
 SummerSlider is an iOS Custom Slider library
@@ -28,9 +28,9 @@ If you used Google IMA SDK with AVPLAYER , the summer slider is a very useful an
 vast sample code was intergrated and explained how to use for some vase usecases such as midrole and prerole cases
 
 ## Demo
-#### Basic.
+#### Basic
 ![demo1](https://github.com/superbderrick/SummerSlider/blob/master/Image/demo1.gif)
-#### Usecase(IMA SDK).
+#### Usecase(IMA SDK)
 ![demo2](https://github.com/superbderrick/SummerSlider/blob/master/Image/demo2.gif)
 
 
@@ -132,12 +132,6 @@ Here you can see a bunch of parameters that you can change:
 #### Bar colors
 - `selectedBarColor`: UIColor - Customize the color of the selected side of the slider.
 - `unselectedBarColor`: UIColor - Customize the color of the unselected side of the slider.
-
-## Object C Version.
-[JMMarkSlider](https://github.com/joamafer/JMMarkSlider)
-
-- Summer slider is based on JMMarkSlider.
-
 
 ## Author
 
