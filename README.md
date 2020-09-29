@@ -20,7 +20,8 @@ Besides the repository introduces various usecase samples with SummerSlider
 
 ## UseCases
 - Youtube Player UI scenario  
-It shows some parts for advertisement separator sections during entire video duration
+It s
+s some parts for advertisement separator sections during entire video duration
 
 - IMA SDK (VAST) with AVPLAYER
 
@@ -39,7 +40,7 @@ vast sample code was intergrated and explained how to use for some vase usecases
 -	iOS 8.0+
 -	Xcode 8
 
-## How to install.
+## How to install
 SummerSlider is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
